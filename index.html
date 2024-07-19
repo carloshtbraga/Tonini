@@ -32,40 +32,105 @@
       .carro {
         height: 400px;
       }
-       @media (max-width: 576px) {
+      @media (max-width: 576px) {
         .carro {
           height: 220px;
         }
       }
       .sec {
-    background-image: url('fundo.png'); /* Substitua pelo caminho real da sua imagem */
-    background-size: cover; /* Ajusta a imagem para cobrir toda a div */
-    background-position: center; /* Centraliza a imagem */
-    background-repeat: no-repeat; /* Evita a repetição da imagem */
-    text-align: center;
+        background-image: url("fundo.png"); /* Substitua pelo caminho real da sua imagem */
+        background-size: cover; /* Ajusta a imagem para cobrir toda a div */
+        background-position: center; /* Centraliza a imagem */
+        background-repeat: no-repeat; /* Evita a repetição da imagem */
+        text-align: center;
       }
 
       .secd {
         display: flex;
-        justify-content: space-around;
+        justify-content: space-between;
         align-items: center;
         padding: 20px;
       }
 
+      .secd > div {
+        flex: 1; /* Faz com que os filhos ocupem igual espaço */
+        margin: 0 10px; /* Adiciona espaço entre os filhos */
+        box-sizing: border-box; /* Inclui padding e border no tamanho total */
+      }
+
       .sec2 {
-        height: 500px;
-        background-color: rgb(198, 202, 202);
-        
+        background-color: rgb(132, 133, 133);
+        text-align: center;
+      }
+
+      .sec2 > h3 {
+        padding-top: 30px;
+      }
+      .pzin {
+        color: rgb(255, 255, 255);
+        font-weight: 600;
       }
       .sec3 {
-        height: 700px;
+        background-image: url("fundo.png"); /* Substitua pelo caminho real da sua imagem */
+        background-size: cover; /* Ajusta a imagem para cobrir toda a div */
+        background-position: center; /* Centraliza a imagem */
+        background-repeat: no-repeat; /* Evita a repetição da imagem */
+        text-align: center;
+      }
+      .sec3 > h3 {
+        padding-top: 30px;
+      }
 
+      i {
+        /* Gradiente de branco para preto */
+        background: linear-gradient(to right, white, rgb(189, 189, 189));
+        -webkit-background-clip: text; /* Para aplicar o gradiente ao texto */
+        -webkit-text-fill-color: transparent; /* Torna o texto transparente para que o gradiente seja visível */
+        color: transparent; /* Torna a cor do texto transparente */
+      }
 
-        background-image: url('fundo.png'); /* Substitua pelo caminho real da sua imagem */
-    background-size: cover; /* Ajusta a imagem para cobrir toda a div */
-    background-position: center; /* Centraliza a imagem */
-    background-repeat: no-repeat; /* Evita a repetição da imagem */
+      .sec2 h5,
+      h3 {
+        /* Gradiente de branco para preto */
+        background: linear-gradient(to right, rgb(110, 108, 108), rgb(0, 0, 0));
+        -webkit-background-clip: text; /* Para aplicar o gradiente ao texto */
+        -webkit-text-fill-color: transparent; /* Torna o texto transparente para que o gradiente seja visível */
+        color: transparent; /* Torna a cor do texto transparente */
+      }
+      @media (min-width: 800px) {
+        .image {
+          height: 40%;
+          width: 40%;
+        }
+      }
 
+      .team-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px; /* Espaço entre as fotos */
+        margin-top: 100px;
+        padding-bottom: 100px;
+      }
+
+      .team-member {
+        flex: 0 1 calc(33% - 20px); /* Ajusta o tamanho dos itens, considerando o espaço entre eles */
+        box-sizing: border-box;
+        text-align: center;
+      }
+
+      .team-img {
+        width: 150px; /* Largura fixa para todas as imagens */
+        height: 150px; /* Altura fixa para todas as imagens */
+        border-radius: 50%; /* Bordas arredondadas */
+        object-fit: cover; /* Garante que a imagem cubra a área sem distorção */
+        margin-bottom: 10px; /* Espaço entre a imagem e a descrição */
+      }
+
+      .team-member p {
+        font-size: 14px;
+        color: #333; /* Cor do texto */
+        margin: 0; /* Remove margens padrão */
       }
     </style>
   </head>
@@ -197,24 +262,97 @@
     <div class="sec bg-light">
       <img class="d-block w-100" src="teste123.png" alt="First slide" />
       <div class="secd">
-      <div>
-        <img class="" src="adv.jpeg" alt="First slide" />
-      </div>
-      <div>
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officiis accusamus, distinctio tempore magnam praesentium recusandae consequatur culpa dignissimos dolor ipsa, neque non repellat aspernatur dolores velit labore inventore repudiandae possimus.</p>
+        <div class="">
+          <img class="image" src="adv.jpeg" alt="First slide" />
+        </div>
+        <div class="">
+          <p class="text-dark">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officiis
+            accusamus, distinctio tempore magnam praesentium recusandae
+          </p>
         </div>
       </div>
     </div>
 
     <div class="sec2">
-        <h1>Bem-vindo ao Tonini Advogados</h1>
-        <p>Seu texto aqui2...</p>
+      <h3 class="text-light">Nossos serviços</h3>
+      <div class="container">
+        <div class="row text-center">
+          <div class="col-md-4 mb-4">
+            <i class="bi bi-people" style="font-size: 50px"></i>
+            <h5>Consultoria</h5>
+            <p class="pzin">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem
+              ipsum dolor sit amet, consectetur adipiscing elit.
+            </p>
+          </div>
+          <div class="col-md-4 mb-4">
+            <i class="bi bi-briefcase" style="font-size: 50px"></i>
+            <h5>Advocacia</h5>
+            <p class="pzin">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem
+              ipsum dolor sit amet, consectetur adipiscing elit.
+            </p>
+          </div>
+          <div class="col-md-4 mb-4">
+            <i class="bi bi-facebook" style="font-size: 50px"></i>
+            <h5>Litígios</h5>
+            <p class="pzin">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem
+              ipsum dolor sit amet, consectetur adipiscing elit.
+            </p>
+          </div>
+          <div class="col-md-4 mb-4">
+            <i class="bi bi-file-earmark-text" style="font-size: 50px"></i>
+            <h5>Documentação</h5>
+            <p class="pzin">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem
+              ipsum dolor sit amet, consectetur adipiscing elit.
+            </p>
+          </div>
+          <div class="col-md-4 mb-4">
+            <i class="bi bi-calendar-event" style="font-size: 50px"></i>
+            <h5>Agendamento</h5>
+            <p class="pzin">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem
+              ipsum dolor sit amet, consectetur adipiscing elit.
+            </p>
+          </div>
+          <div class="col-md-4 mb-4">
+            <i class="bi bi-shield-check" style="font-size: 50px"></i>
+            <h5>Segurança</h5>
+            <p class="pzin">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem
+              ipsum dolor sit amet, consectetur adipiscing elit.
+            </p>
+          </div>
+        </div>
       </div>
+    </div>
+    <!-- secao 3-->
+    <div class="sec3 bg-light">
+      <h3>Nossa equipe</h3>
+      <div class="team-container">
+        <!-- Pessoa 1 -->
+        <div class="team-member">
+          <img src="pessoa.webp" alt="Pessoa 1" class="team-img" />
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </div>
+        <!-- Pessoa 2 -->
+        <div class="team-member">
+          <img src="pessoa.webp" alt="Pessoa 2" class="team-img" />
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </div>
+        <!-- Pessoa 3 -->
+        <div class="team-member">
+          <img src="pessoa.webp" alt="Pessoa 3" class="team-img" />
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </div>
+ 
+ 
+      </div>
+    </div>
 
-      <div class="sec3 bg-light">
-        <h1>Bem-vindo ao Tonini Advogados</h1>
-        <p>Seu texto aqui...</p>
-      </div>
     <!-- Footer -->
     <div class="container">
       <ul class="nav justify-content-center pb-3 mb-3 mt-3">
