@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -120,10 +120,11 @@
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
-        gap: 20px; /* Espaço entre as fotos */
+        gap: 20px;
         margin-top: 100px;
         padding-bottom: 100px;
       }
+
 
       .team-row {
         padding: 0 10%;
@@ -139,21 +140,29 @@
       }
 
       .team-img {
-        width: 150px; /* Largura fixa para todas as imagens */
-        height: 150px; /* Altura fixa para todas as imagens */
-        border-radius: 50%; /* Bordas arredondadas */
-        object-fit: cover; /* Garante que a imagem cubra a área sem distorção */
-        margin-bottom: 10px; /* Espaço entre a imagem e a descrição */
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        object-fit: cover;
+        margin-bottom: 10px;
       }
 
       .team-member p {
-        font-size: 14px;
+        font-size: 16px;
         text-align: justify;
         color: #333;
         margin: 0;
         padding-left: 10%;
         padding-right: 10%;
       }
+      #teamCarousel .carousel-control-prev-icon {
+        background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23000' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E");
+      }
+
+      #teamCarousel .carousel-control-next-icon {
+          background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23000' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E");
+      }
+
 
 
       .sec4 {
@@ -169,10 +178,10 @@
       }
       .sec5 {
         text-align: center;
-        background-image: url("fundo2.png"); /* Substitua pelo caminho real da sua imagem */
-        background-size: cover; /* Ajusta a imagem para cobrir toda a div */
-        background-position: center; /* Centraliza a imagem */
-        background-repeat: no-repeat; /* Evita a repetição da imagem */
+        background-image: url("fundo2.png");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
         width: 100%;
         height: 600px;
       }
@@ -384,7 +393,7 @@
       <div class="container">
         <div class="row text-center">
           <div class="col-md-4 mb-4">
-            <i class="bi bi-people" style="font-size: 50px"></i>
+            <i class="bi bi-people-fill" style="font-size: 50px"></i>
             <h5>Consultoria</h5>
             <p class="pzin">
               Nossos advogados especializados oferecem orientação jurídica para
@@ -392,7 +401,7 @@
             </p>
           </div>
           <div class="col-md-4 mb-4">
-            <i class="bi bi-briefcase" style="font-size: 50px"></i>
+            <i class="bi bi-briefcase-fill" style="font-size: 50px"></i>
             <h5>Advocacia</h5>
             <p class="pzin">
               Representação legal em diversas áreas do direito, assegurando os
@@ -400,7 +409,7 @@
             </p>
           </div>
           <div class="col-md-4 mb-4">
-            <i class="bi bi-calendar-event" style="font-size: 50px"></i>
+            <i class="bi bi-calendar-event-fill" style="font-size: 50px"></i>
             <h5>Litígios</h5>
             <p class="pzin">
               Defesa e acompanhamento de processos judiciais, com foco na
@@ -408,7 +417,7 @@
             </p>
           </div>
           <div class="col-md-4 mb-4">
-            <i class="bi bi-file-earmark-text" style="font-size: 50px"></i>
+            <i class="bi bi-file-earmark-text-fill" style="font-size: 50px"></i>
             <h5>Documentação</h5>
             <p class="pzin">
               Preparação e revisão de documentos legais, garantindo conformidade
@@ -416,7 +425,7 @@
             </p>
           </div>
           <div class="col-md-4 mb-4">
-            <i class="bi bi-calendar-event" style="font-size: 50px"></i>
+            <i class="bi bi-calendar-event-fill" style="font-size: 50px"></i>
             <h5>Agendamento</h5>
             <p class="pzin">
               Facilitação de agendamentos para consultas e reuniões com nossos
@@ -424,7 +433,7 @@
             </p>
           </div>
           <div class="col-md-4 mb-4">
-            <i class="bi bi-shield-check" style="font-size: 50px"></i>
+            <i class="bi bi-shield-fill-check" style="font-size: 50px"></i>
             <h5>Segurança</h5>
             <p class="pzin">
               Confidencialidade e proteção dos dados e interesses de nossos
@@ -434,22 +443,22 @@
         </div>
       </div>
     </div>
-
-    <div class="sec4" id="adress">
-      <h3 class="h3localizacao">Nosso escritório</h3>
-      <img src="local.jpeg" alt="Pessoa 1" class="localfoto" />
-      <img src="local2.JPG" alt="Pessoa 1" class="localfoto" />
-
-      
+    <div class="sec4">
+      <h1>OUTRA SESSÂO</h1>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique commodi
+      minima repudiandae, cupiditate earum repellendus, adipisci, quam ducimus
+      provident eaque voluptatum. Quaerat adipisci asperiores nihil tempora unde
+      perspiciatis minima? Veniam.
     </div>
 
-    <!-- <div class="sec5"> -->
-    <!--   <h3>Nossa equipe</h3> -->
-    <!--   <p>Seu texto aqui...</p> -->
-    <!-- </div> -->
+    <div class="sec2" id="adress">
+      <h3 class="text-light">Nosso escritório</h3>
+      <img src="local.jpeg" alt="Pessoa 1" class="localfoto" />
+      <img src="local2.JPG" alt="Pessoa 1" class="localfoto" />
+    </div>
 
-    <div class="sec2 mt-5 bg-light">
-      <h3>Nossa equipe</h3>
+    <div class="sec4 bg-light">
+      <h3 class="h3localizacao">Nossa equipe</h3>
       <div id="teamCarousel" class="carousel slide" data-ride="carousel">
         <ol class="carousel-indicators">
           <li data-target="#teamCarousel" data-slide-to="0" class="active"></li>
@@ -458,7 +467,7 @@
         <div class="carousel-inner">
           <div class="carousel-item active">
             <div class="row team-row">
-              <div class="col-6">
+              <div class="col-12 col-sm-6">
                 <div class="team-member">
                   <img
                     src="pessoa.webp"
@@ -473,7 +482,7 @@
                   </p>
                 </div>
               </div>
-              <div class="col-6">
+              <div class="col-12 col-sm-6">
                 <div class="team-member">
                   <img
                     src="pessoa.webp"
@@ -492,7 +501,7 @@
           </div>
           <div class="carousel-item">
             <div class="row team-row">
-              <div class="col-6">
+              <div class="col-12 col-sm-6">
                 <div class="team-member">
                   <img
                     src="pessoa.webp"
@@ -507,7 +516,7 @@
                   </p>
                 </div>
               </div>
-              <div class="col-6">
+              <div class="col-12 col-sm-6">
                 <div class="team-member">
                   <img
                     src="pessoa.webp"
@@ -545,64 +554,8 @@
         </a>
       </div>
     </div>
-    <!--
-    <div class="sec2 bg-light">
-      <h3>Nossa equipe</h3>
-      <div class="team-container">
-        <div class="team-member">
-          <img src="pessoa.webp" alt="Pessoa 1" class="team-img" />
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum
-            dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit
-            amet, consectetur adipiscing elit.
-          </p>
-        </div>
-        <div class="team-member">
-          <img src="pessoa.webp" alt="Pessoa 2" class="team-img" />
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum
-            dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit
-            amet, consectetur adipiscing elit.
-          </p>
-        </div>
-        <div class="team-member">
-          <img src="pessoa.webp" alt="Pessoa 3" class="team-img" />
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum
-            dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit
-            amet, consectetur adipiscing elit.
-          </p>
-        </div>
-
-        <div class="team-member">
-          <img src="pessoa.webp" alt="Pessoa 1" class="team-img" />
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum
-            dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit
-            amet, consectetur adipiscing elit.
-          </p>
-        </div>
-        <div class="team-member">
-          <img src="pessoa.webp" alt="Pessoa 2" class="team-img" />
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum
-            dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit
-            amet, consectetur adipiscing elit.
-          </p>
-        </div>
-        <div class="team-member">
-          <img src="pessoa.webp" alt="Pessoa 3" class="team-img" />
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum
-            dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit
-            amet, consectetur adipiscing elit.
-          </p>
-        </div>
-      </div>
-    </div>
-    -->
-    <div class="sec4" id="adress">
-      <h3 class="h3localizacao">Nossa localização</h3>
+    <div class="sec2 pt-5 pb-5" id="adress">
+      <h3 class="text-light">Nossa localização</h3>
       <div>
         <iframe
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3675.1042898719447!2d-43.17735918980961!3d-22.90952387916665!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9981df8736cc71%3A0xf4c06cfb53fb104a!2sR.%20M%C3%A9xico%2C%2090%20-%20Centro%2C%20Rio%20de%20Janeiro%20-%20RJ%2C%2020031-141!5e0!3m2!1spt-BR!2sbr!4v1721411109943!5m2!1spt-BR!2sbr"
@@ -644,35 +597,36 @@
       <footer
         class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top"
       >
-        <div class="col-md-4 d-flex align-items-center">
-          <a
-            href="/"
-            class="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1"
-          >
-            <svg class="bi" width="30" height="24">
-              <use xlink:href="#bootstrap"></use>
-            </svg>
-          </a>
-          <div class="footerbaixo">
+        <div class="flex d-flex w-100 justify-content-between">
+          <div class="col-md-4">
+            <a
+              href="/"
+              class="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1"
+            >
+              <svg class="bi" width="30" height="24">
+                <use xlink:href="#bootstrap"></use>
+              </svg>
+            </a>
+
             <span class="text-muted">©Tonini e Associados</span>
-            <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
-              <li class="icon-spacing">
-                <a class="text-muted" href="#">
-                  <i class="bi bi-twitter" style="font-size: 24px"></i>
-                </a>
-              </li>
-              <li class="icon-spacing">
-                <a class="text-muted" href="#">
-                  <i class="bi bi-instagram" style="font-size: 24px"></i>
-                </a>
-              </li>
-              <li class="icon-spacing">
-                <a class="text-muted" href="#">
-                  <i class="bi bi-facebook" style="font-size: 24px"></i>
-                </a>
-              </li>
-            </ul>
           </div>
+          <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+            <li class="icon-spacing">
+              <a class="text-muted" href="#">
+                <i class="bi bi-twitter" style="font-size: 24px"></i>
+              </a>
+            </li>
+            <li class="icon-spacing">
+              <a class="text-muted" href="#">
+                <i class="bi bi-instagram" style="font-size: 24px"></i>
+              </a>
+            </li>
+            <li class="icon-spacing">
+              <a class="text-muted" href="#">
+                <i class="bi bi-facebook" style="font-size: 24px"></i>
+              </a>
+            </li>
+          </ul>
         </div>
       </footer>
     </div>
