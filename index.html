@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -107,11 +107,7 @@
 
       .sec2 h5,
       h3 {
-        /* Gradiente de branco para preto */
-        background: linear-gradient(to right, rgb(110, 108, 108), rgb(0, 0, 0));
-        -webkit-background-clip: text; /* Para aplicar o gradiente ao texto */
-        -webkit-text-fill-color: transparent; /* Torna o texto transparente para que o gradiente seja visível */
-        color: transparent; /* Torna a cor do texto transparente */
+        color: white;
       }
       @media (min-width: 800px) {
         .image {
@@ -186,15 +182,41 @@
         border-radius: 10px;
         filter: grayscale(100%);
         margin: 30px;
-        margin-bottom: 100px;
+      }
+      .localfoto2 {
+        width: 600px;
+        height: 400px;
+        border-radius: 10px;
+        margin: 30px;
       }
 
       @media (max-width: 600px) {
         .localfoto {
-          height: 300px;
-          width: 400px;
+          height: 250px;
+          width: 300px;
+        }
+        .localfoto2 {
+          height: 250px;
+          width: 300px;
+        }
+
+        .secd {
+          flex-direction: column;
         }
       }
+      .icon-spacing {
+        margin-left: 10px; /* ajuste o valor conforme necessário */
+      }
+
+      .footerbaixo {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      .h3localizacao {
+        color: rgb(63, 62, 62);
+              }
     </style>
   </head>
   <body>
@@ -342,8 +364,8 @@
         <div class="">
           <img class="image" src="adv.jpeg" alt="First slide" />
         </div>
-        <div class="">
-          <p class="text-dark text-justify">
+        <div class="divtextoabout">
+          <p class="text-dark text-justify mt-5">
             <span class="font-weight-bold">Tonini Advogados Associados</span>,
             atual denominação do escritório fundado em 1991, é liderado por
             <span class="font-weight-bold">Renato Tonini</span>, profissional
@@ -414,25 +436,11 @@
     </div>
 
     <div class="sec4" id="adress">
-      <h3>Nossa localização</h3>
+      <h3 class="h3localizacao">Nosso escritório</h3>
       <img src="local.jpeg" alt="Pessoa 1" class="localfoto" />
       <img src="local2.JPG" alt="Pessoa 1" class="localfoto" />
 
-      <div>
-        <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3675.1042898719447!2d-43.17735918980961!3d-22.90952387916665!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9981df8736cc71%3A0xf4c06cfb53fb104a!2sR.%20M%C3%A9xico%2C%2090%20-%20Centro%2C%20Rio%20de%20Janeiro%20-%20RJ%2C%2020031-141!5e0!3m2!1spt-BR!2sbr!4v1721411109943!5m2!1spt-BR!2sbr"
-          width="600"
-          height="450"
-          style="border: 0"
-          allowfullscreen=""
-          loading="lazy"
-          referrerpolicy="no-referrer-when-downgrade"
-        ></iframe>
-        <h5>
-          <span class="">Rua México, 90</span> • Grupo 50 Centro • Rio de
-          Janeiro • CEP 20031-141
-        </h5>
-      </div>
+      
     </div>
 
     <!-- <div class="sec5"> -->
@@ -593,6 +601,25 @@
       </div>
     </div>
     -->
+    <div class="sec4" id="adress">
+      <h3 class="h3localizacao">Nossa localização</h3>
+      <div>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3675.1042898719447!2d-43.17735918980961!3d-22.90952387916665!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9981df8736cc71%3A0xf4c06cfb53fb104a!2sR.%20M%C3%A9xico%2C%2090%20-%20Centro%2C%20Rio%20de%20Janeiro%20-%20RJ%2C%2020031-141!5e0!3m2!1spt-BR!2sbr!4v1721411109943!5m2!1spt-BR!2sbr"
+          width="600"
+          height="450"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+          class="localfoto2"
+        ></iframe>
+        <h5>
+          <span class="">Rua México, 90</span> • Grupo 50 Centro • Rio de
+          Janeiro • CEP 20031-141
+        </h5>
+      </div>
+    </div>
 
     <!-- Footer -->
     <div class="container">
@@ -626,26 +653,27 @@
               <use xlink:href="#bootstrap"></use>
             </svg>
           </a>
-
-          <span class="mb-3 mb-md-0 text-muted">© 2022 Company, Inc</span>
+          <div class="footerbaixo">
+            <span class="text-muted">©Tonini e Associados</span>
+            <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+              <li class="icon-spacing">
+                <a class="text-muted" href="#">
+                  <i class="bi bi-twitter" style="font-size: 24px"></i>
+                </a>
+              </li>
+              <li class="icon-spacing">
+                <a class="text-muted" href="#">
+                  <i class="bi bi-instagram" style="font-size: 24px"></i>
+                </a>
+              </li>
+              <li class="icon-spacing">
+                <a class="text-muted" href="#">
+                  <i class="bi bi-facebook" style="font-size: 24px"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
         </div>
-        <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
-          <li class="ms-3">
-            <a class="text-muted" href="#">
-              <i class="bi bi-twitter" style="font-size: 24px"></i>
-            </a>
-          </li>
-          <li class="ms-3">
-            <a class="text-muted" href="#">
-              <i class="bi bi-instagram" style="font-size: 24px"></i>
-            </a>
-          </li>
-          <li class="ms-3">
-            <a class="text-muted" href="#">
-              <i class="bi bi-facebook" style="font-size: 24px"></i>
-            </a>
-          </li>
-        </ul>
       </footer>
     </div>
 
