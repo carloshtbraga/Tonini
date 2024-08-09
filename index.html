@@ -97,13 +97,6 @@
         padding-top: 30px;
       }
 
-      i {
-        /* Gradiente de branco para preto */
-        background: linear-gradient(to right, white, rgb(189, 189, 189));
-        -webkit-background-clip: text; /* Para aplicar o gradiente ao texto */
-        -webkit-text-fill-color: transparent; /* Torna o texto transparente para que o gradiente seja visível */
-        color: transparent; /* Torna a cor do texto transparente */
-      }
 
       .sec2 h5,
       h3 {
@@ -212,6 +205,7 @@
         .secd {
           flex-direction: column;
         }
+        
       }
       .icon-spacing {
         margin-left: 10px; /* ajuste o valor conforme necessário */
@@ -226,6 +220,35 @@
       .h3localizacao {
         color: rgb(63, 62, 62);
               }
+
+      .selo {
+        width: 200px;
+        height: 210px;
+      }
+
+      .selodiv {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        padding: 20px;
+      }
+      .selodiv {
+    display: flex;
+    align-items: center;
+  }
+
+  .selo {
+    width: 250px;
+    height: 260px;
+
+  }
+
+  @media (max-width: 768px) { /* Para dispositivos móveis */
+    .selo {
+      width: 140px;
+      height: 150px;
+    }
+  }
     </style>
   </head>
   <body>
@@ -315,8 +338,8 @@
         <div class="carousel-item active">
           <img class="carro d-block w-100" src="teste.jpg" alt="First slide" />
           <div class="carousel-caption d-none d-md-block">
-            <h5>First Slide</h5>
-            <p>Description for the first slide.</p>
+            <h5>Mais de 40 anos atuando</h5>
+            <p>Terceira geração de advogados criminalistas.</p>
           </div>
         </div>
         <div class="carousel-item">
@@ -389,11 +412,11 @@
     </div>
     <!-- Services -->
     <div class="sec2" id="services">
-      <h3 class="text-light">Nossos Serviços</h3>
+      <h3 class="text-light">Serviços</h3>
       <div class="container">
         <div class="row text-center">
           <div class="col-md-4 mb-4">
-            <i class="bi bi-people-fill" style="font-size: 50px"></i>
+            <i class="bi bi-people-fill" style="font-size: 50px; color: rgb(160, 143, 100)"></i>
             <h5>Consultoria</h5>
             <p class="pzin">
               Nossos advogados especializados oferecem orientação jurídica para
@@ -401,7 +424,7 @@
             </p>
           </div>
           <div class="col-md-4 mb-4">
-            <i class="bi bi-briefcase-fill" style="font-size: 50px"></i>
+            <i class="bi bi-briefcase-fill" style="font-size: 50px; color: rgb(160, 143, 100)"></i>
             <h5>Advocacia</h5>
             <p class="pzin">
               Representação legal em diversas áreas do direito, assegurando os
@@ -409,7 +432,7 @@
             </p>
           </div>
           <div class="col-md-4 mb-4">
-            <i class="bi bi-calendar-event-fill" style="font-size: 50px"></i>
+            <i class="bi bi-calendar-event-fill" style="font-size: 50px; color: rgb(160, 143, 100)"></i>
             <h5>Litígios</h5>
             <p class="pzin">
               Defesa e acompanhamento de processos judiciais, com foco na
@@ -417,7 +440,7 @@
             </p>
           </div>
           <div class="col-md-4 mb-4">
-            <i class="bi bi-file-earmark-text-fill" style="font-size: 50px"></i>
+            <i class="bi bi-file-earmark-text-fill" style="font-size: 50px; color: rgb(160, 143, 100)"></i>
             <h5>Documentação</h5>
             <p class="pzin">
               Preparação e revisão de documentos legais, garantindo conformidade
@@ -425,7 +448,7 @@
             </p>
           </div>
           <div class="col-md-4 mb-4">
-            <i class="bi bi-calendar-event-fill" style="font-size: 50px"></i>
+            <i class="bi bi-calendar-event-fill" style="font-size: 50px; color: rgb(160, 143, 100)"></i>
             <h5>Agendamento</h5>
             <p class="pzin">
               Facilitação de agendamentos para consultas e reuniões com nossos
@@ -433,7 +456,7 @@
             </p>
           </div>
           <div class="col-md-4 mb-4">
-            <i class="bi bi-shield-fill-check" style="font-size: 50px"></i>
+            <i class="bi bi-shield-fill-check" style="font-size: 50px; color: rgb(160, 143, 100)"></i>
             <h5>Segurança</h5>
             <p class="pzin">
               Confidencialidade e proteção dos dados e interesses de nossos
@@ -444,21 +467,30 @@
       </div>
     </div>
     <div class="sec4">
-      <h1>OUTRA SESSÂO</h1>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique commodi
-      minima repudiandae, cupiditate earum repellendus, adipisci, quam ducimus
-      provident eaque voluptatum. Quaerat adipisci asperiores nihil tempora unde
-      perspiciatis minima? Veniam.
+      <h3 class="h3localizacao">Especialidades</h3>
+      <div class="selodiv">
+        <div class="divselo">
+          <img src="selo2.jpg" alt="Pessoa 1" class="selo" />
+        </div>
+        <div>
+          <p><i class="bi bi-check" style="font-size: 22px; color: goldenrod;"></i>Direito Penal Econômico</p>
+          <p><i class="bi bi-check" style="font-size: 22px; color: goldenrod"></i>Direito Penal Empresarial</p>
+          <p><i class="bi bi-check" style="font-size: 22px; color: goldenrod"></i>Crimes Digitais</p>
+          <p><i class="bi bi-check" style="font-size: 22px; color: goldenrod"></i>Crimes Ambientais</p>
+          <p><i class="bi bi-check" style="font-size: 22px; color: goldenrod"></i>Compliance Criminal</p>
+          <p><i class="bi bi-check" style="font-size: 22px; color: goldenrod"></i>Violência Doméstica</p>
+        </div>
+      </div>
     </div>
 
     <div class="sec2" id="adress">
-      <h3 class="text-light">Nosso escritório</h3>
+      <h3 class="text-light">Escritório</h3>
       <img src="local.jpeg" alt="Pessoa 1" class="localfoto" />
       <img src="local2.JPG" alt="Pessoa 1" class="localfoto" />
     </div>
 
     <div class="sec4 bg-light">
-      <h3 class="h3localizacao">Nossa equipe</h3>
+      <h3 class="h3localizacao">Equipe</h3>
       <div id="teamCarousel" class="carousel slide" data-ride="carousel">
         <ol class="carousel-indicators">
           <li data-target="#teamCarousel" data-slide-to="0" class="active"></li>
@@ -597,7 +629,7 @@
       <footer
         class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top"
       >
-        <div class="flex d-flex w-100 justify-content-between">
+        <div class="flex d-flex w-100 justify-content-between align-items-center">
           <div class="col-md-4">
             <a
               href="/"
@@ -608,7 +640,7 @@
               </svg>
             </a>
 
-            <span class="text-muted">©Tonini e Associados</span>
+            <span class="text-muted">©Tonini</span>
           </div>
           <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
             <li class="icon-spacing">
