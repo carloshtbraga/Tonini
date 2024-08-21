@@ -75,9 +75,9 @@ body {
   padding-top: 30px;
 }
 
-.sec2 h5,
-h3 {
+.sec2 h2 {
   color: white;
+  font-size: 24px;
 }
 
 .team-container {
@@ -145,6 +145,7 @@ h3 {
   width: 100%;
 }
 .secTitle {
+  font-size: 30px;
   padding-top: 20px;
   padding-bottom: 20px;
 }
