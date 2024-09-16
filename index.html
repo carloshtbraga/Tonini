@@ -93,10 +93,7 @@
             background-repeat: no-repeat; /* Evita a repetição da imagem */
             text-align: center;
           }
-          .sec3 > h3 {
-            padding-top: 30px;
-          }
-
+      
 
           .sec2 h5,
           h3 {
@@ -118,7 +115,10 @@
             padding-bottom: 100px;
           }
 
-
+          .especialidades {
+            color: rgb(231, 231, 230);
+            font-weight: 600;
+          }
           .team-row {
             padding: 0 10%;
             padding-bottom: 120px;
@@ -168,7 +168,7 @@
             width: 100%;
           }
           .sec4 > h3 {
-            padding: 50px;
+            padding-top: 30px;
           }
           .sec5 {
             text-align: center;
@@ -193,6 +193,11 @@
             margin: 30px;
           }
 
+          .hrzin {
+            width: 80%;
+            border: 1px solid rgb(221, 207, 9);
+          }
+
           @media (max-width: 600px) {
             .localfoto {
               height: 250px;
@@ -213,6 +218,9 @@
 
             .secd {
               flex-direction: column;
+            }
+            .image {
+              width: 50%;
             }
 
           }
@@ -261,6 +269,10 @@
         .estatua {
           width: 70%;
         }
+      }
+      .textoescritorio {
+        text-justify: center;
+        padding: 10px;
       }
     </style>
   </head>
@@ -386,26 +398,28 @@
 
     <!-- Sections -->
     <div class="sec" id="about">
+
       <img
         class="w-50 mt-5 mb-5"
         src="assets/about-logo.png"
         alt="First slide"
       />
+      <hr class="hrzin">
       <div class="secd">
-        <div class="">
-          <img
+
+          <!-- <img
             class="image"
-            src="assets/estatua.png"
+            src="assets/1.png"
             alt="First slide"
             class="estatua"
-          />
-        </div>
+          /> -->
+
         <div class="divtextoabout">
           <p class="text-dark text-justify mt-5">
             <span class="font-weight-bold">Tonini Advogados Associados</span>,
             atual denominação do escritório fundado em 1991, é liderado por
             <span class="font-weight-bold">Renato Tonini</span>, profissional
-            com destacada atuação e represen-tatividade na advocacia criminal há
+            com destacada atuação e representatividade na advocacia criminal há
             mais de 40 anos. A equipe é formada por profissionais com alto grau
             de especialização, empenhados na irrestrita defesa dos interesses
             dos Clientes, apta a dar atendimento em todo território nacional e
@@ -415,7 +429,7 @@
       </div>
     </div>
     <!-- Services -->
-    <div class="sec2" id="services">
+    <!-- <div class="sec2" id="services">
       <h3 class="text-light">Serviços</h3>
       <div class="container">
         <div class="row text-center">
@@ -524,50 +538,51 @@
           </div>
         </div>
       </div>
-    </div>
-    <div class="sec4">
-      <h3 class="h3localizacao">Especialidades</h3>
+    </div> -->
+    <div class="sec2">
+      <h3 class="text-light">Especialidades</h3>
       <div class="selodiv">
-        <div class="divselo">
-          <img src="assets/selo2.jpg" alt="Pessoa 1" class="selo" />
-        </div>
+
         <div>
           <p class="especialidades">
-            <i class="bi bi-check" style="font-size: 22px; color: goldenrod"></i
+            <i class="bi bi-check" style="font-size: 22px; color: rgb(221, 207, 9)"></i
             >Direito Penal Econômico
           </p>
-          <p>
-            <i class="bi bi-check" style="font-size: 22px; color: goldenrod"></i
+          <p class="especialidades">
+            <i class="bi bi-check" style="font-size: 22px; color: rgb(221, 207, 9);"></i
             >Direito Penal Empresarial
           </p>
-          <p>
-            <i class="bi bi-check" style="font-size: 22px; color: goldenrod"></i
+          <p class="especialidades">
+            <i class="bi bi-check" style="font-size: 22px; color: rgb(221, 207, 9);"></i
             >Crimes Digitais
           </p>
-          <p>
-            <i class="bi bi-check" style="font-size: 22px; color: goldenrod"></i
+          <p class="especialidades">
+            <i class="bi bi-check" style="font-size: 22px; color: rgb(221, 207, 9);"></i
             >Crimes Ambientais
           </p>
-          <p>
-            <i class="bi bi-check" style="font-size: 22px; color: goldenrod"></i
+          <p class="especialidades">
+            <i class="bi bi-check" style="font-size: 22px; color: rgb(221, 207, 9);"></i
             >Compliance Criminal
           </p>
-          <p>
-            <i class="bi bi-check" style="font-size: 22px; color: goldenrod"></i
+          <p class="especialidades">
+            <i class="bi bi-check" style="font-size: 22px; color: rgb(221, 207, 9);"></i
             >Violência Doméstica
           </p>
         </div>
       </div>
     </div>
 
-    <div class="sec2" id="adress">
-      <h3 class="text-light">Escritório</h3>
+    <div class="sec4" id="adress">
+      <h3 class="h3localizacao">Escritório</h3>
+      <br>
+      <p class="textoescritorio text-justify">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cupiditate nulla corporis qui nobis porro laboriosam, debitis architecto reprehenderit vitae distinctio nisi pariatur, necessitatibus nam. Facilis aliquid error corporis voluptas sunt.</p>
       <img src="assets/local.jpeg" alt="Pessoa 1" class="localfoto" />
       <img src="assets/local2.jpg" alt="Pessoa 1" class="localfoto" />
+      <br><br>
     </div>
 
-    <div class="sec4 bg-light">
-      <h3 class="h3localizacao">Equipe</h3>
+    <div class="sec2 bg-light">
+      <h3 class="text-light">Equipe</h3>
       <div id="teamCarousel" class="carousel slide" data-ride="carousel">
         <ol class="carousel-indicators">
           <li data-target="#teamCarousel" data-slide-to="0" class="active"></li>
@@ -578,12 +593,13 @@
             <div class="row team-row">
               <div class="col-12 col-sm-6">
                 <div class="team-member">
+                  <br>
                   <img
                     src="assets/renato.jpg"
                     alt="Pessoa 1"
                     class="team-img img-fluid"
                   />
-                  <p>
+                  <p class="text-light">
                     p1 Lorem ipsum dolor sit amet, consectetur adipiscing
                     elit.Lorem ipsum dolor sit amet, consectetur adipiscing
                     elit.Lorem ipsum dolor sit amet, consectetur adipiscing
@@ -593,12 +609,13 @@
               </div>
               <div class="col-12 col-sm-6">
                 <div class="team-member">
+                  <br>
                   <img
                     src="assets/lila.jpeg"
                     alt="Pessoa 2"
                     class="team-img img-fluid"
                   />
-                  <p>
+                  <p class="text-light">
                     p2 Lorem ipsum dolor sit amet, consectetur adipiscing
                     elit.Lorem ipsum dolor sit amet, consectetur adipiscing
                     elit.Lorem ipsum dolor sit amet, consectetur adipiscing
@@ -612,12 +629,14 @@
             <div class="row team-row">
               <div class="col-12 col-sm-6">
                 <div class="team-member">
+                  <br>
+                  
                   <img
                     src="assets/renato.jpg"
                     alt="Pessoa 3"
                     class="team-img img-fluid"
                   />
-                  <p>
+                  <p class="text-light">
                     p3 Lorem ipsum dolor sit amet, consectetur adipiscing
                     elit.Lorem ipsum dolor sit amet, consectetur adipiscing
                     elit.Lorem ipsum dolor sit amet, consectetur adipiscing
@@ -627,12 +646,13 @@
               </div>
               <div class="col-12 col-sm-6">
                 <div class="team-member">
+                  <br>
                   <img
-                    src="assets/pessoa.webp"
+                    src="assets/lila.jpeg"
                     alt="Pessoa 4"
                     class="team-img img-fluid"
                   />
-                  <p>
+                  <p class="text-light">
                     Lorem ipsum dolor sit amet, consectetur adipiscing
                     elit.Lorem ipsum dolor sit amet, consectetur adipiscing
                     elit.Lorem ipsum dolor sit amet, consectetur adipiscing
@@ -663,8 +683,8 @@
         </a>
       </div>
     </div>
-    <div class="sec2 pt-5 pb-5" id="adress">
-      <h3 class="text-light">Nossa localização</h3>
+    <div class="sec4" id="adress">
+      <h3 class="text-dark">Nossa localização</h3>
       <div>
         <iframe
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3675.1042898719447!2d-43.17735918980961!3d-22.90952387916665!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9981df8736cc71%3A0xf4c06cfb53fb104a!2sR.%20M%C3%A9xico%2C%2090%20-%20Centro%2C%20Rio%20de%20Janeiro%20-%20RJ%2C%2020031-141!5e0!3m2!1spt-BR!2sbr!4v1721411109943!5m2!1spt-BR!2sbr"
@@ -680,6 +700,7 @@
           <span class="">Rua México, 90</span> • Grupo 50 Centro • Rio de
           Janeiro • CEP 20031-141
         </h5>
+        <br>
       </div>
     </div>
 
