@@ -1,342 +1,364 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, shrink-to-fit=no"
-    />
-    <title>Tonini Advogados</title>
-    <link rel="icon" href="assets/logo.png" />
-    <!-- Bootstrap CSS -->
-    <link
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
-      rel="stylesheet"
-    />
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css"
-      rel="stylesheet"
-    />
-    <style>
-          body {
-            padding-top: 80px; /* Ajuste conforme a altura da sua navbar */
-            background-color: #f8f9fa;
-          }
-          .navbar {
-            padding-top: 20px;
-            padding-bottom: 20px;
-          }
-          .navbar-brand img {
-            margin-right: 10px;
-          }
 
-          .carro {
-            height: 400px;
-            object-fit: cover;
-            filter: brightness(80%);
-          }
-          @media (max-width: 576px) {
-            .carro {
-              height: 220px;
-            }
-            .team-member p {
-              padding-left: 5%;
-              padding-right: 5%;
-            }
-          }
-          .sec {
-            background-image: url("assets/fundo.png"); /* Substitua pelo caminho real da sua imagem */
-            background-size: cover; /* Ajusta a imagem para cobrir toda a div */
-            background-position: center; /* Centraliza a imagem */
-            background-repeat: no-repeat; /* Evita a repetição da imagem */
-            text-align: center;
-          }
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <title>Tonini Advogados</title>
+  <link rel="icon" href="assets/logo.png" />
+  <!-- Bootstrap CSS -->
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet" />
+  <style>
+    body {
+      padding-top: 80px;
+      /* Ajuste conforme a altura da sua navbar */
+      background-color: #f8f9fa;
+    }
 
-          .secd {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
+    .navbar {
+      padding-top: 20px;
+      padding-bottom: 20px;
+    }
 
-          }
+    .navbar-brand img {
+      margin-right: 10px;
+    }
 
-          .secd > div {
-            flex: 1; /* Faz com que os filhos ocupem igual espaço */
-            margin: 0 10px; /* Adiciona espaço entre os filhos */
-            box-sizing: border-box; /* Inclui padding e border no tamanho total */
-          }
+    .carro {
+      height: 400px;
+      object-fit: cover;
+      filter: brightness(80%);
+    }
 
-          .sec2 {
-            text-align: center;
-            background-image: linear-gradient(
-                90deg,
-                rgba(0, 0, 0, 0.6) 0%,
-                rgba(0, 0, 0, 0.6) 35%
-              ),
-              url("assets/fundo.png"); /* Substitua pelo caminho real da sua imagem */
-            background-size: cover; /* Ajusta a imagem para cobrir toda a div */
-            background-position: center; /* Centraliza a imagem */
-            background-repeat: no-repeat; /* Evita a repetição da imagem */
-          }
-
-          .sec2 > h3 {
-            padding-top: 30px;
-          }
-          .pzin {
-            color: rgb(255, 255, 255);
-            font-weight: 600;
-          }
-
-          .sec3 {
-            background-image: url("assets/fundo.png"); /* Substitua pelo caminho real da sua imagem */
-            background-size: cover; /* Ajusta a imagem para cobrir toda a div */
-            background-position: center; /* Centraliza a imagem */
-            background-repeat: no-repeat; /* Evita a repetição da imagem */
-            text-align: center;
-          }
-
-
-          .sec2 h5,
-          h3 {
-            color: white;
-          }
-          @media (min-width: 800px) {
-            .image {
-              height: 40%;
-              width: 40%;
-            }
-          }
-
-          .team-container {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            gap: 20px;
-            margin-top: 100px;
-            padding-bottom: 100px;
-          }
-
-          .especialidades {
-            color: rgb(231, 231, 230);
-            font-weight: 600;
-          }
-          .team-row {
-            padding: 0 10%;
-            padding-bottom: 120px;
-          }
-
-          .team-member {
-            flex: 0 1 calc(33% - 20px);
-            box-sizing: border-box;
-            align-items: center;
-            <!-- padding-bottom: 120px; -->
-            <!-- padding-right: 120px; -->
-            <!-- padding-left: 120px; -->
-          }
-
-          .team-img {
-            width: 150px;
-            height: 150px;
-            border-radius: 50%;
-            object-fit: cover;
-            margin-bottom: 10px;
-          }
-
-          .team-member p {
-            font-size: 16px;
-            text-align: justify;
-            color: #333;
-            margin: 0;
-            padding-left: 10%;
-            padding-right: 10%;
-          }
-          #teamCarousel .carousel-control-prev-icon {
-            background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23000' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E");
-          }
-
-          #teamCarousel .carousel-control-next-icon {
-              background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23000' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E");
-          }
-
-
-
-          .sec4 {
-            text-align: center;
-            background-image: url("assets/fundo.png"); /* Substitua pelo caminho real da sua imagem */
-            background-size: cover; /* Ajusta a imagem para cobrir toda a div */
-            background-position: center; /* Centraliza a imagem */
-            background-repeat: no-repeat; /* Evita a repetição da imagem */
-            width: 100%;
-          }
-          .sec4 > h3 {
-            padding-top: 30px;
-          }
-          .sec5 {
-            text-align: center;
-            background-image: url("assets/fundo2.png");
-            background-size: cover;
-            background-position: center;
-            background-repeat: no-repeat;
-            width: 100%;
-            height: 600px;
-          }
-          .localfoto {
-            width: 600px;
-            height: 400px;
-            border-radius: 10px;
-            filter: grayscale(100%);
-            margin: 30px;
-          }
-          .localfoto2 {
-            width: 600px;
-            height: 400px;
-            border-radius: 10px;
-            margin: 30px;
-          }
-
-          .hrzin {
-            width: 80%;
-            border: 1px solid rgb(148, 148, 147);
-          }
-
-          @media (max-width: 600px) {
-            .localfoto {
-              height: 250px;
-              width: 300px;
-              margin: 10px;
-            }
-
-          .localfoto2 {
-            width: 300px;
-            height: 250px;
-            margin: 10px;
-          }
-
-            .localfoto2 {
-              height: 250px;
-              width: 300px;
-            }
-
-            .secd {
-              flex-direction: column;
-            }
-            .image {
-              width: 50%;
-            }
-
-          }
-          .icon-spacing {
-            margin-left: 10px; /* ajuste o valor conforme necessário */
-          }
-
-          .footerbaixo {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-          }
-
-          .h3localizacao {
-            color: rgb(63, 62, 62);
-                  }
-
-          .selo {
-            width: 200px;
-            height: 210px;
-          }
-
-          .selodiv {
-            display: flex;
-            justify-content: space-around;
-            align-items: center;
-            padding: 20px;
-          }
-          .selodiv {
-        display: flex;
-        align-items: center;
+    @media (max-width: 576px) {
+      .carro {
+        height: 220px;
       }
 
+      .team-member p {
+        padding-left: 5%;
+        padding-right: 5%;
+      }
+    }
+
+    .sec {
+      background-image: url("assets/fundo.png");
+      /* Substitua pelo caminho real da sua imagem */
+      background-size: cover;
+      /* Ajusta a imagem para cobrir toda a div */
+      background-position: center;
+      /* Centraliza a imagem */
+      background-repeat: no-repeat;
+      /* Evita a repetição da imagem */
+      text-align: center;
+    }
+
+    .secd {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+    }
+
+    .secd>div {
+      flex: 1;
+      /* Faz com que os filhos ocupem igual espaço */
+      margin: 0 10px;
+      /* Adiciona espaço entre os filhos */
+      box-sizing: border-box;
+      /* Inclui padding e border no tamanho total */
+    }
+
+    .sec2 {
+      text-align: center;
+      background-image: linear-gradient(90deg,
+          rgba(0, 0, 0, 0.6) 0%,
+          rgba(0, 0, 0, 0.6) 35%),
+        url("assets/fundo.png");
+      /* Substitua pelo caminho real da sua imagem */
+      background-size: cover;
+      /* Ajusta a imagem para cobrir toda a div */
+      background-position: center;
+      /* Centraliza a imagem */
+      background-repeat: no-repeat;
+      /* Evita a repetição da imagem */
+    }
+
+    .sec2>h3 {
+      padding-top: 30px;
+    }
+
+    .pzin {
+      color: rgb(255, 255, 255);
+      font-weight: 600;
+    }
+
+    .sec3 {
+      background-image: url("assets/fundo.png");
+      /* Substitua pelo caminho real da sua imagem */
+      background-size: cover;
+      /* Ajusta a imagem para cobrir toda a div */
+      background-position: center;
+      /* Centraliza a imagem */
+      background-repeat: no-repeat;
+      /* Evita a repetição da imagem */
+      text-align: center;
+    }
+
+
+    .sec2 h5,
+    h3 {
+      color: white;
+    }
+
+    @media (min-width: 800px) {
+      .image {
+        height: 40%;
+        width: 40%;
+      }
+    }
+
+    .team-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      margin-top: 100px;
+      padding-bottom: 100px;
+    }
+
+    .especialidades {
+      color: rgb(231, 231, 230);
+      font-weight: 600;
+    }
+
+    .team-row {
+      padding: 0 10%;
+      padding-bottom: 120px;
+    }
+
+    .team-member {
+      flex: 0 1 calc(33% - 20px);
+      box-sizing: border-box;
+      align-items: center;
+      < !-- padding-bottom: 120px;
+      -->< !-- padding-right: 120px;
+      -->< !-- padding-left: 120px;
+      -->
+    }
+
+    .team-img {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-bottom: 10px;
+    }
+
+    .team-member p {
+      font-size: 16px;
+      text-align: justify;
+      color: #333;
+      margin: 0;
+      padding-left: 10%;
+      padding-right: 10%;
+    }
+
+    #teamCarousel .carousel-control-prev-icon {
+      background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23000' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E");
+    }
+
+    #teamCarousel .carousel-control-next-icon {
+      background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23000' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E");
+    }
+
+
+
+    .sec4 {
+      text-align: center;
+      background-image: url("assets/fundo.png");
+      /* Substitua pelo caminho real da sua imagem */
+      background-size: cover;
+      /* Ajusta a imagem para cobrir toda a div */
+      background-position: center;
+      /* Centraliza a imagem */
+      background-repeat: no-repeat;
+      /* Evita a repetição da imagem */
+      width: 100%;
+    }
+
+    .sec4>h3 {
+      padding-top: 30px;
+    }
+
+    .sec5 {
+      text-align: center;
+      background-image: url("assets/fundo2.png");
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      width: 100%;
+      height: 600px;
+    }
+
+    .localfoto {
+      width: 600px;
+      height: 400px;
+      border-radius: 10px;
+      filter: grayscale(100%);
+      margin: 30px;
+    }
+
+    .localfoto2 {
+      width: 600px;
+      height: 400px;
+      border-radius: 10px;
+      margin: 30px;
+    }
+
+    .hrzin {
+      width: 80%;
+      border: 1px solid goldenrod;
+    }
+
+    @media (max-width: 600px) {
+      .localfoto {
+        height: 250px;
+        width: 300px;
+        margin: 10px;
+      }
+
+      .localfoto2 {
+        width: 300px;
+        height: 250px;
+        margin: 10px;
+      }
+
+      .localfoto2 {
+        height: 250px;
+        width: 300px;
+      }
+
+      .secd {
+        flex-direction: column;
+      }
+
+      .image {
+        width: 50%;
+      }
+
+    }
+
+    .icon-spacing {
+      margin-left: 10px;
+      /* ajuste o valor conforme necessário */
+    }
+
+    .footerbaixo {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .h3localizacao {
+      color: rgb(63, 62, 62);
+    }
+
+    .selo {
+      width: 200px;
+      height: 210px;
+    }
+
+    .selodiv {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      padding: 20px;
+    }
+
+    .selodiv {
+      display: flex;
+      align-items: center;
+    }
+
+    .selo {
+      width: 250px;
+      height: 260px;
+
+    }
+
+    .textoabout {
+      font-size: 22px;
+    }
+
+    .textoescritorio {
+      text-justify: center;
+      padding: 10px;
+    }
+
+    @media (max-width: 768px) {
+
+      /* Para dispositivos móveis */
       .selo {
-        width: 250px;
-        height: 260px;
+        width: 140px;
+        height: 150px;
 
       }
 
-      @media (max-width: 768px) { /* Para dispositivos móveis */
-        .selo {
-          width: 140px;
-          height: 150px;
+      .estatua {
+        width: 70%;
+      }
 
-        }
-        .estatua {
-          width: 70%;
-        }
-      }
-      .textoescritorio {
-        text-justify: center;
-        padding: 10px;
-      }
       .logu {
         width: 280px;
         height: 170px;
       }
-    </style>
-  </head>
-  <body>
-    <!-- Navbar -->
-    <nav
-      class="navbar navbar-expand-lg navbar-light bg-light fixed-top border-bottom"
-    >
-      <a class="navbar-brand" href="#">
-        <img
-          src="assets/logo.png"
-          width="30"
-          height="30"
-          class="d-inline-block align-top"
-          alt=""
-        />
-        <!-- <img
+
+      .textoabout {
+        font-size: 15px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top border-bottom">
+    <a class="navbar-brand" href="#">
+      <img src="assets/logo.png" width="30" height="30" class="d-inline-block align-top" alt="" />
+      <!-- <img
         class="logu"
         src="assets/logo3.png"
         alt="First slide"
       /> -->
-        Tonini Associados
-      </a>
-      <button
-        class="navbar-toggler"
-        type="button"
-        data-toggle="collapse"
-        data-target="#navbarNavDropdown"
-        aria-controls="navbarNavDropdown"
-        aria-expanded="false"
-        aria-label="Toggle navigation"
-      >
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div
-        class="collapse navbar-collapse justify-content-end"
-        id="navbarNavDropdown"
-      >
-        <ul class="navbar-nav">
-          <li class="nav-item active">
-            <a class="nav-link" href="#"
-              >Inicio <span class="sr-only">(current)</span></a
-            >
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#about">Quem somos</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#services">Serviços</a>
-          </li>
+      Tonini Associados
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+      aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
+      <ul class="navbar-nav">
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Inicio <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#about">Quem somos</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#services">Serviços</a>
+        </li>
 
-          <li class="nav-item">
-            <a class="nav-link" href="#adress">Endereço</a>
-          </li>
-        </ul>
-      </div>
-    </nav>
+        <li class="nav-item">
+          <a class="nav-link" href="#adress">Endereço</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
 
-    <!-- Carousel -->
-    <!-- <div
+  <!-- Carousel -->
+  <!-- <div
       id="carouselExampleIndicators"
       class="carousel slide"
       data-ride="carousel"
@@ -405,34 +427,36 @@
       </a>
     </div> -->
 
-    <!-- Sections -->
-    <div class="sec" id="about">
-      <img
-        class="logu mt-5 mb-5"
-        src="assets/about-logo.png"
-        alt="First slide"
-      />
-      <hr class="hrzin" />
-      <div class="secd">
-        <!-- <img
+  <!-- Sections -->
+  <div class="sec" id="about">
+    <img class="logu mt-5 mb-5" src="assets/about-logo.png" alt="First slide" />
+    <hr class="hrzin" />
+    <div class="secd">
+      <!-- <img
             class="image"
             src="assets/1.png"
             alt="First slide"
             class="estatua"
           /> -->
 
-        <div class="divtextoabout">
-          <p class="text-dark text-justify mt-5">
-            <span class="font-weight-bold">Tonini Advogados Associados</span>,
-            é um dos escritórios mais destacados e reconhecidos pela comunidade jurídica brasileira. Fundado em 1991, é liderado por <span class="font-weight-bold">Renato Tonini</span>, advogado criminalista com mais de 40 anos de experiência. Nossa equipe é composta por profissionais altamente especializados, dedicados à defesa irrestrita dos interesses dos nossos clientes. Atendemos em todo o território nacional e no exterior, por meio de nossos correspondentes.
-         
-          </p>
-        </div>
+      <div class="divtextoabout">
+        <p class="text-dark text-justify mt-5 textoabout">
+          <span class="font-weight-bold">Tonini Advogados Associados</span>, é
+          um dos escritórios mais destacados e reconhecidos pela comunidade
+          jurídica brasileira. Fundado em 1991, é liderado por
+          <span class="font-weight-bold">Renato Tonini</span>, advogado
+          criminalista com mais de 40 anos de experiência. Nossa equipe é
+          composta por profissionais altamente especializados, dedicados à
+          defesa irrestrita dos interesses dos nossos clientes. Atendemos em
+          todo o território nacional e no exterior, por meio de nossos
+          correspondentes.
+        </p>
       </div>
-      <br><br><br>
     </div>
-    <!-- Services -->
-    <!-- <div class="sec2" id="services">
+    <br /><br /><br />
+  </div>
+  <!-- Services -->
+  <!-- <div class="sec2" id="services">
       <h3 class="text-dark">Serviços</h3>
       <div class="container">
         <div class="row text-center">
@@ -542,110 +566,94 @@
         </div>
       </div>
     </div> -->
-    <div class="sec2">
-      <h3 class="text-light">Especialidades</h3>
-      <div class="selodiv">
-        <div>
-          <!-- <i
-          class="bi bi-cash"
-          style="
-          font-size: 40px;
-          background: linear-gradient(45deg, #ffd700, #b88e07, #947e02);
-          -webkit-background-clip: text;
-          -webkit-text-fill-color: transparent;
-          color: rgb(160, 143, 100);
-        "
-        ></i> -->
+  <div class="sec2">
+    <h3 class="text-light">Especialidades</h3>
+    <div class="selodiv">
+      <div>
         <p class="especialidades">
-            <img src="assets/money.webp" alt="">
-         
-            Direito Penal Econômico
-          </p>
           <!-- <i
-          class="bi bi-briefcase"
-          style="
-          font-size: 40px;
-          background: linear-gradient(45deg, #ffd700, #b88e07, #947e02);
-          -webkit-background-clip: text;
-          -webkit-text-fill-color: transparent;
-          color: rgb(160, 143, 100);
-        "
-        ></i> -->
+            class="bi bi-cash"
+            style="
+            font-size: 50px;
+            background: linear-gradient(45deg, #ffd700, #b88e07, #947e02);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            color: rgb(160, 143, 100);
+          "
+          ></i> -->
+          <img src="assets/money2.svg" alt="" />
+
+          Direito Penal Econômico
+        </p>
         <p class="especialidades siz">
-            <img src="assets/mala.webp" alt="">
-     
-            Direito Penal Empresarial
-          </p>
           <!-- <i
-          class="bi bi-pc-display-horizontal"
-          style="
-          font-size: 40px;
-          background: linear-gradient(45deg, #ffd700, #b88e07, #947e02);
-          -webkit-background-clip: text;
-          -webkit-text-fill-color: transparent;
-          color: rgb(160, 143, 100);
-        "
-        ></i> -->
+              class="bi bi-briefcase"
+              style="
+                font-size: 40px;
+                background: linear-gradient(45deg, #ffd700, #b88e07, #947e02);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                color: rgb(160, 143, 100);
+              "
+            ></i> -->
+          <img src="assets/empresarial.svg" alt="" />
+          Direito Penal Empresarial
+        </p>
         <p class="especialidades">
-            <img src="assets/pc.webp" alt="">
-       
-            Crimes Digitais
-          </p>
-          <p class="especialidades">
-            <!-- <i
+          <i class="bi bi-pc-display-horizontal" style="
+                font-size: 40px;
+                background: linear-gradient(45deg, #ffd700, #b88e07, #947e02);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                color: rgb(160, 143, 100);
+              "></i>
+
+          Crimes Digitais
+        </p>
+        <p class="especialidades">
+          <!-- <i
               class="bi bi-tree"
               style="
-          font-size: 40px;
-          background: linear-gradient(45deg, #ffd700, #b88e07, #947e02);
-          -webkit-background-clip: text;
-          -webkit-text-fill-color: transparent;
-          color: rgb(160, 143, 100);
-        "
+                font-size: 40px;
+                background: linear-gradient(45deg, #ffd700, #b88e07, #947e02);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                color: rgb(160, 143, 100);
+              "
             ></i> -->
-            <img src="assets/arvore.png" alt="">
-            Crimes Ambientais
-          </p>
-          <p class="especialidades">
-            <i
-              class="bi bi-person-arms-up"
-              style="
-          font-size: 40px;
-          background: linear-gradient(45deg, #ffd700, #b88e07, #947e02);
-          -webkit-background-clip: text;
-          -webkit-text-fill-color: transparent;
-          color: rgb(160, 143, 100);
-        "
-            ></i>
-            Compliance Criminal
-          </p>
-          <p class="especialidades">
-            <i
-              class="bi bi-person-standing"
-              style="
-          font-size: 40px;
-          background: linear-gradient(45deg, #ffd700, #b88e07, #947e02);
-          -webkit-background-clip: text;
-          -webkit-text-fill-color: transparent;
-          color: rgb(160, 143, 100);
-        "
-            ></i
-            ><i
-              class="bi bi-person-standing-dress"
-              style="
-          font-size: 40px;
-          background: linear-gradient(45deg, #ffd700, #b88e07, #947e02);
-          -webkit-background-clip: text;
-          -webkit-text-fill-color: transparent;
-          color: rgb(160, 143, 100);
-        "
-            ></i
-            >Violência Doméstica
-          </p>
-        </div>
+          <img src="assets/arvore.svg" alt="" />
+          Crimes Ambientais
+        </p>
+        <p class="especialidades">
+          <i class="bi bi-person-arms-up" style="
+                font-size: 40px;
+                background: linear-gradient(45deg, #ffd700, #b88e07, #947e02);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                color: rgb(160, 143, 100);
+              "></i>
+          Compliance Criminal
+        </p>
+        <p class="especialidades">
+          <i class="bi bi-person-standing" style="
+                font-size: 40px;
+                background: linear-gradient(45deg, #ffd700, #b88e07, #947e02);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                color: rgb(160, 143, 100);
+              "></i><i class="bi bi-person-standing-dress" style="
+                font-size: 40px;
+                background: linear-gradient(45deg, #ffd700, #b88e07, #947e02);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                color: rgb(160, 143, 100);
+              "></i>Violência Doméstica
+        </p>
       </div>
     </div>
+  </div>
 
-    <!-- <div class="sec4" id="adress">
+  <!-- <div class="sec4" id="adress">
       <h3 class="h3localizacao">Escritório</h3>
       <br>
       <p class="textoescritorio text-justify">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cupiditate nulla corporis qui nobis porro laboriosam, debitis architecto reprehenderit vitae distinctio nisi pariatur, necessitatibus nam. Facilis aliquid error corporis voluptas sunt.</p>
@@ -654,191 +662,153 @@
       <br><br>
     </div> -->
 
-    <div class="sec4 bg-light">
-      <h3 class="text-dark">Equipe</h3>
-      <div id="teamCarousel" class="carousel slide" data-ride="carousel">
-        <ol class="carousel-indicators">
-          <li data-target="#teamCarousel" data-slide-to="0" class="active"></li>
-          <li data-target="#teamCarousel" data-slide-to="1"></li>
-        </ol>
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <div class="row team-row">
-              <div class="col-12 col-sm-6">
-                <div class="team-member">
-                  <br />
-                  <img
-                    src="assets/renato.jpg"
-                    alt="Pessoa 1"
-                    class="team-img img-fluid"
-                  />
-                  <p class="text-dark">
-                    p1 Lorem ipsum dolor sit amet, consectetur adipiscing
-                    elit.Lorem ipsum dolor sit amet, consectetur adipiscing
-                    elit.Lorem ipsum dolor sit amet, consectetur adipiscing
-                    elit.
-                  </p>
-                </div>
-              </div>
-              <div class="col-12 col-sm-6">
-                <div class="team-member">
-                  <br />
-                  <img
-                    src="assets/lila.jpeg"
-                    alt="Pessoa 2"
-                    class="team-img img-fluid"
-                  />
-                  <p class="text-dark">
-                    p2 Lorem ipsum dolor sit amet, consectetur adipiscing
-                    elit.Lorem ipsum dolor sit amet, consectetur adipiscing
-                    elit.Lorem ipsum dolor sit amet, consectetur adipiscing
-                    elit.
-                  </p>
-                </div>
+  <div class="sec4 bg-light">
+    <h3 class="text-dark">Equipe</h3>
+    <div id="teamCarousel" class="carousel slide" data-ride="carousel">
+      <ol class="carousel-indicators">
+        <li data-target="#teamCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#teamCarousel" data-slide-to="1"></li>
+      </ol>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <div class="row team-row">
+            <div class="col-12 col-sm-6">
+              <div class="team-member">
+                <br />
+                <img src="assets/renato.jpg" alt="Pessoa 1" class="team-img img-fluid" />
+                <p class="text-dark">
+                  p1 Lorem ipsum dolor sit amet, consectetur adipiscing
+                  elit.Lorem ipsum dolor sit amet, consectetur adipiscing
+                  elit.Lorem ipsum dolor sit amet, consectetur adipiscing
+                  elit.
+                </p>
               </div>
             </div>
-          </div>
-          <div class="carousel-item">
-            <div class="row team-row">
-              <div class="col-12 col-sm-6">
-                <div class="team-member">
-                  <br />
-
-                  <img
-                    src="assets/renato.jpg"
-                    alt="Pessoa 3"
-                    class="team-img img-fluid"
-                  />
-                  <p class="text-dark">
-                    p3 Lorem ipsum dolor sit amet, consectetur adipiscing
-                    elit.Lorem ipsum dolor sit amet, consectetur adipiscing
-                    elit.Lorem ipsum dolor sit amet, consectetur adipiscing
-                    elit.
-                  </p>
-                </div>
-              </div>
-              <div class="col-12 col-sm-6">
-                <div class="team-member">
-                  <br />
-                  <img
-                    src="assets/lila.jpeg"
-                    alt="Pessoa 4"
-                    class="team-img img-fluid"
-                  />
-                  <p class="text-dark">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing
-                    elit.Lorem ipsum dolor sit amet, consectetur adipiscing
-                    elit.Lorem ipsum dolor sit amet, consectetur adipiscing
-                    elit.
-                  </p>
-                </div>
+            <div class="col-12 col-sm-6">
+              <div class="team-member">
+                <br />
+                <img src="assets/lila.jpeg" alt="Pessoa 2" class="team-img img-fluid" />
+                <p class="text-dark">
+                  p2 Lorem ipsum dolor sit amet, consectetur adipiscing
+                  elit.Lorem ipsum dolor sit amet, consectetur adipiscing
+                  elit.Lorem ipsum dolor sit amet, consectetur adipiscing
+                  elit.
+                </p>
               </div>
             </div>
           </div>
         </div>
-        <a
-          class="carousel-control-prev"
-          href="#teamCarousel"
-          role="button"
-          data-slide="prev"
-        >
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="sr-only">Previous</span>
-        </a>
-        <a
-          class="carousel-control-next"
-          href="#teamCarousel"
-          role="button"
-          data-slide="next"
-        >
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="sr-only">Next</span>
-        </a>
-      </div>
-    </div>
-    <div class="sec2" id="adress">
-      <h3 class="text-light">Nossa localização</h3>
-      <div>
-        <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3675.1042898719447!2d-43.17735918980961!3d-22.90952387916665!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9981df8736cc71%3A0xf4c06cfb53fb104a!2sR.%20M%C3%A9xico%2C%2090%20-%20Centro%2C%20Rio%20de%20Janeiro%20-%20RJ%2C%2020031-141!5e0!3m2!1spt-BR!2sbr!4v1721411109943!5m2!1spt-BR!2sbr"
-          width="600"
-          height="450"
-          style="border: 0"
-          allowfullscreen=""
-          loading="lazy"
-          referrerpolicy="no-referrer-when-downgrade"
-          class="localfoto2"
-        ></iframe>
-        <h5>
-          <span class="">Rua México, 90</span> • Grupo 501 • Centro • Rio de
-          Janeiro • CEP 20031-141
-        </h5>
-        <br />
-      </div>
-    </div>
+        <div class="carousel-item">
+          <div class="row team-row">
+            <div class="col-12 col-sm-6">
+              <div class="team-member">
+                <br />
 
-    <!-- Footer -->
-    <div class="container">
-      <ul class="nav justify-content-center pb-3 mb-3 mt-3">
-        <li class="nav-item">
-          <a href="#" class="nav-link px-2 text-muted">Home</a>
-        </li>
-        <li class="nav-item">
-          <a href="#" class="nav-link px-2 text-muted">Features</a>
-        </li>
-        <li class="nav-item">
-          <a href="#" class="nav-link px-2 text-muted">Pricing</a>
-        </li>
-        <li class="nav-item">
-          <a href="#" class="nav-link px-2 text-muted">FAQs</a>
-        </li>
-        <li class="nav-item">
-          <a href="#" class="nav-link px-2 text-muted">About</a>
-        </li>
-      </ul>
+                <img src="assets/renato.jpg" alt="Pessoa 3" class="team-img img-fluid" />
+                <p class="text-dark">
+                  p3 Lorem ipsum dolor sit amet, consectetur adipiscing
+                  elit.Lorem ipsum dolor sit amet, consectetur adipiscing
+                  elit.Lorem ipsum dolor sit amet, consectetur adipiscing
+                  elit.
+                </p>
+              </div>
+            </div>
+            <div class="col-12 col-sm-6">
+              <div class="team-member">
+                <br />
+                <img src="assets/lila.jpeg" alt="Pessoa 4" class="team-img img-fluid" />
+                <p class="text-dark">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing
+                  elit.Lorem ipsum dolor sit amet, consectetur adipiscing
+                  elit.Lorem ipsum dolor sit amet, consectetur adipiscing
+                  elit.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <a class="carousel-control-prev" href="#teamCarousel" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="carousel-control-next" href="#teamCarousel" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
+  </div>
+  <div class="sec2" id="adress">
+    <h3 class="text-light">Nossa localização</h3>
+    <div>
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3675.1042898719447!2d-43.17735918980961!3d-22.90952387916665!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9981df8736cc71%3A0xf4c06cfb53fb104a!2sR.%20M%C3%A9xico%2C%2090%20-%20Centro%2C%20Rio%20de%20Janeiro%20-%20RJ%2C%2020031-141!5e0!3m2!1spt-BR!2sbr!4v1721411109943!5m2!1spt-BR!2sbr"
+        width="600" height="450" style="border: 0" allowfullscreen="" loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade" class="localfoto2"></iframe>
+      <h5>
+        <span class="">Rua México, 90</span> • Grupo 501 • Centro • Rio de
+        Janeiro • CEP 20031-141
+      </h5>
+      <br />
+    </div>
+  </div>
 
-      <footer
-        class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top"
-      >
-        <div
-          class="flex d-flex w-100 justify-content-between align-items-center"
-        >
-          <div class="col-md-4">
-            <a
-              href="/"
-              class="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1"
-            >
-              <svg class="bi" width="30" height="24">
-                <use xlink:href="#bootstrap"></use>
-              </svg>
+  <!-- Footer -->
+  <div class="container">
+    <ul class="nav justify-content-center pb-3 mb-3 mt-3">
+      <li class="nav-item">
+        <a href="#" class="nav-link px-2 text-muted">Home</a>
+      </li>
+      <li class="nav-item">
+        <a href="#" class="nav-link px-2 text-muted">Features</a>
+      </li>
+      <li class="nav-item">
+        <a href="#" class="nav-link px-2 text-muted">Pricing</a>
+      </li>
+      <li class="nav-item">
+        <a href="#" class="nav-link px-2 text-muted">FAQs</a>
+      </li>
+      <li class="nav-item">
+        <a href="#" class="nav-link px-2 text-muted">About</a>
+      </li>
+    </ul>
+
+    <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+      <div class="flex d-flex w-100 justify-content-between align-items-center">
+        <div class="col-md-4">
+          <a href="/" class="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1">
+            <svg class="bi" width="30" height="24">
+              <use xlink:href="#bootstrap"></use>
+            </svg>
+          </a>
+
+          <span class="text-muted">©Tonini</span>
+        </div>
+        <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+          <li class="icon-spacing">
+            <a class="text-muted" href="#">
+              <i class="bi bi-twitter" style="font-size: 24px"></i>
             </a>
+          </li>
+          <li class="icon-spacing">
+            <a class="text-muted" href="#">
+              <i class="bi bi-instagram" style="font-size: 24px"></i>
+            </a>
+          </li>
+          <li class="icon-spacing">
+            <a class="text-muted" href="#">
+              <i class="bi bi-facebook" style="font-size: 24px"></i>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </footer>
+  </div>
 
-            <span class="text-muted">©Tonini</span>
-          </div>
-          <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
-            <li class="icon-spacing">
-              <a class="text-muted" href="#">
-                <i class="bi bi-twitter" style="font-size: 24px"></i>
-              </a>
-            </li>
-            <li class="icon-spacing">
-              <a class="text-muted" href="#">
-                <i class="bi bi-instagram" style="font-size: 24px"></i>
-              </a>
-            </li>
-            <li class="icon-spacing">
-              <a class="text-muted" href="#">
-                <i class="bi bi-facebook" style="font-size: 24px"></i>
-              </a>
-            </li>
-          </ul>
-        </div>
-      </footer>
-    </div>
+  <!-- Bootstrap JS and dependencies -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
 
-    <!-- Bootstrap JS and dependencies -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-  </body>
 </html>
