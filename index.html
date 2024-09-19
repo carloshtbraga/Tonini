@@ -9,7 +9,11 @@
   <!-- Bootstrap CSS -->
   <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet" />
   <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
   <style>
+     html {
+            scroll-behavior: smooth;
+        }
     body {
       padding-top: 80px;
       /* Ajuste conforme a altura da sua navbar */
@@ -219,7 +223,7 @@
 
     .hrzin {
       width: 80%;
-      border: 1px solid rgb(23, 52, 139);
+      border: 1px solid rgb(190, 164, 16);
     }
 
     @media (max-width: 600px) {
@@ -297,6 +301,10 @@
       padding: 10px;
     }
 
+    .titulosfont{
+font-family: 'Roboto', sans-serif;
+    }
+
     @media (max-width: 768px) {
 
       /* Para dispositivos móveis */
@@ -325,7 +333,7 @@
 <body>
   <!-- Navbar -->
   <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top border-bottom">
-    <a class="navbar-brand" href="#">
+    <a class="navbar-brand titulosfont" href="#">
       <img src="assets/logo.png" width="30" height="30" class="d-inline-block align-top" alt="" />
       <!-- <img
         class="logu"
@@ -347,12 +355,16 @@
           <a class="nav-link" href="#about">Quem somos</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#services">Serviços</a>
+          <a class="nav-link" href="#especialidades">Serviços</a>
         </li>
 
         <li class="nav-item">
+          <a class="nav-link" href="#equipe">Equipe</a>
+        </li>
+        <li class="nav-item">
           <a class="nav-link" href="#adress">Endereço</a>
         </li>
+      </ul>
       </ul>
     </div>
   </nav>
@@ -440,7 +452,7 @@
           /> -->
 
       <div class="divtextoabout">
-        <p class="text-dark text-justify mt-5 textoabout">
+        <p class="text-dark text-justify mt-5 textoabout titulosfont">
           <span class="font-weight-bold">Tonini Advogados Associados</span>, é
           um dos escritórios mais destacados e reconhecidos pela comunidade
           jurídica brasileira. Fundado em 1991, é liderado por
@@ -566,67 +578,59 @@
         </div>
       </div>
     </div> -->
-  <div class="sec2">
+  <div class="sec2" id="especialidades">
     <h3 class="text-light">Especialidades</h3>
     <div class="selodiv">
       <div>
         <p class="especialidades">
-          <!-- <i
-            class="bi bi-cash"
+          <i
+            class="bi bi-check"
             style="
-            font-size: 50px;
+            font-size: 30px;
             background: linear-gradient(45deg, #ffd700, #b88e07, #947e02);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             color: rgb(160, 143, 100);
           "
-          ></i> -->
-          <img src="assets/money2.svg" alt="" />
+          ></i>
+          <!-- <img src="assets/money2.svg" alt="" /> -->
 
           Direito Penal Econômico
         </p>
         <p class="especialidades siz">
-          <!-- <i
-              class="bi bi-briefcase"
+          <i
+              class="bi bi-check"
               style="
-                font-size: 40px;
-                background: linear-gradient(45deg, #ffd700, #b88e07, #947e02);
-                -webkit-background-clip: text;
-                -webkit-text-fill-color: transparent;
-                color: rgb(160, 143, 100);
+                font-size: 30px;
+
+                color: rgb(16, 202, 31);
               "
-            ></i> -->
-          <img src="assets/empresarial.svg" alt="" />
+            ></i>
+          <!-- <img src="assets/empresarial.svg" alt="" /> -->
           Direito Penal Empresarial
         </p>
         <p class="especialidades">
-          <i class="bi bi-pc-display-horizontal" style="
-                font-size: 40px;
-                background: linear-gradient(45deg, #ffd700, #b88e07, #947e02);
-                -webkit-background-clip: text;
-                -webkit-text-fill-color: transparent;
-                color: rgb(160, 143, 100);
+          <i class="bi bi-check" style="
+                font-size: 30px;
+                color: rgb(8, 236, 8);
               "></i>
 
           Crimes Digitais
         </p>
         <p class="especialidades">
-          <!-- <i
-              class="bi bi-tree"
+          <i
+              class="bi bi-check"
               style="
-                font-size: 40px;
-                background: linear-gradient(45deg, #ffd700, #b88e07, #947e02);
-                -webkit-background-clip: text;
-                -webkit-text-fill-color: transparent;
-                color: rgb(160, 143, 100);
+                font-size: 30px;
+               
               "
-            ></i> -->
-          <img src="assets/arvore.svg" alt="" />
+            ></i>
+          <!-- <img src="assets/arvore.svg" alt="" /> -->
           Crimes Ambientais
         </p>
         <p class="especialidades">
-          <i class="bi bi-person-arms-up" style="
-                font-size: 40px;
+          <i class="bi bi-check" style="
+                font-size: 30px;
                 background: linear-gradient(45deg, #ffd700, #b88e07, #947e02);
                 -webkit-background-clip: text;
                 -webkit-text-fill-color: transparent;
@@ -635,15 +639,9 @@
           Compliance Criminal
         </p>
         <p class="especialidades">
-          <i class="bi bi-person-standing" style="
-                font-size: 40px;
-                background: linear-gradient(45deg, #ffd700, #b88e07, #947e02);
-                -webkit-background-clip: text;
-                -webkit-text-fill-color: transparent;
-                color: rgb(160, 143, 100);
-              "></i><i class="bi bi-person-standing-dress" style="
-                font-size: 40px;
-                background: linear-gradient(45deg, #ffd700, #b88e07, #947e02);
+          <i class="bi bi-check" style="
+                font-size: 30px;
+                background: linear-gradient(45deg, #ffffff, #ffffff, #ffffff);
                 -webkit-background-clip: text;
                 -webkit-text-fill-color: transparent;
                 color: rgb(160, 143, 100);
@@ -662,7 +660,7 @@
       <br><br>
     </div> -->
 
-  <div class="sec4 bg-light">
+  <div class="sec4 bg-light" id="equipe">
     <h3 class="text-dark">Equipe</h3>
     <div id="teamCarousel" class="carousel slide" data-ride="carousel">
       <ol class="carousel-indicators">
@@ -757,20 +755,10 @@
   <div class="container">
     <ul class="nav justify-content-center pb-3 mb-3 mt-3">
       <li class="nav-item">
-        <a href="#" class="nav-link px-2 text-muted">Home</a>
+        <a href="#" class="nav-link px-2 text-muted">Telefone (21) 2533-9662</a>
       </li>
-      <li class="nav-item">
-        <a href="#" class="nav-link px-2 text-muted">Features</a>
-      </li>
-      <li class="nav-item">
-        <a href="#" class="nav-link px-2 text-muted">Pricing</a>
-      </li>
-      <li class="nav-item">
-        <a href="#" class="nav-link px-2 text-muted">FAQs</a>
-      </li>
-      <li class="nav-item">
-        <a href="#" class="nav-link px-2 text-muted">About</a>
-      </li>
+
+
     </ul>
 
     <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
@@ -787,19 +775,10 @@
         <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
           <li class="icon-spacing">
             <a class="text-muted" href="#">
-              <i class="bi bi-twitter" style="font-size: 24px"></i>
+              <i class="bi bi-whatsapp" style="font-size: 24px"></i>
             </a>
           </li>
-          <li class="icon-spacing">
-            <a class="text-muted" href="#">
-              <i class="bi bi-instagram" style="font-size: 24px"></i>
-            </a>
-          </li>
-          <li class="icon-spacing">
-            <a class="text-muted" href="#">
-              <i class="bi bi-facebook" style="font-size: 24px"></i>
-            </a>
-          </li>
+        
         </ul>
       </div>
     </footer>
