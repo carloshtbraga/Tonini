@@ -316,6 +316,11 @@
     .icone{
       font-size: 70px;
     }
+    .titulosfont {
+      font-family: "Caveat", cursive;
+      font-size: 40px;
+     
+    }
     @media (max-width: 768px) {
 
       /* Para dispositivos móveis */
@@ -343,6 +348,11 @@
       .icone{
       font-size: 25px;
     }
+    .titulosfont {
+      font-family: "Caveat", cursive;
+      font-size: 22px;
+     
+    }
     }
       .spec{
         font-weight: 900;
@@ -354,17 +364,50 @@
       text-shadow: 1px 1px 5px rgb(0, 0, 0);
    
     }
-    .titulosfont {
-      font-family: "Caveat", cursive;
-      font-size: 22px;
-     
-    }
+  
     .titulosfont2 {
       font-family: "Caveat", cursive;
       font-size: 24px;
      
     }
-    
+    .spikes {
+  position: relative;
+  background: #ffffff;
+  height: 1vh;
+}
+
+.spikes::after {
+  content: '';
+  position: absolute;
+  right: 0;
+  left: -0%;
+  top: 100%;
+  z-index: 10;
+  display: block;
+  height: 10px;
+  background-size: 10px 100%;
+  background-image: linear-gradient(135deg, #ffffff 25%, transparent 25%), linear-gradient(225deg, #ffffff 25%, transparent 25%);
+  background-position: 0 0;
+}
+.spikes2 {
+  position: relative;
+  background: #646464;
+  height: 1vh;
+}
+
+.spikes2::after {
+  content: '';
+  position: absolute;
+  right: 0;
+  left: -0%;
+  top: 100%;
+  z-index: 10;
+  display: block;
+  height: 10px;
+  background-size: 10px 100%;
+  background-image: linear-gradient(135deg, #646464 25%, transparent 25%), linear-gradient(225deg, #646464 25%, transparent 25%);
+  background-position: 0 0;
+}
   </style>
 </head>
 
@@ -616,8 +659,9 @@
         </div>
       </div>
     </div> -->
+    <section class="spikes"></section>
     <div class="sec2" id="especialidades">
-      <h3 class="text-light text-center titulos">Especialidades</h3>
+      <h3 class="text-light text-center titulos ">Especialidades</h3>
       <div class="row row-cols-2 row-cols-md-3 g-3 selodiv">
         
         <div class="col">
@@ -678,6 +722,7 @@
         
       </div>
     </div>
+    <section class="spikes2"></section>
     
     
 
@@ -705,7 +750,7 @@
                 <br />
                 <img src="assets/renato.jpg" alt="Pessoa 1" class="team-img img-fluid" />
                 <h5 class="nome">Renato Tonini</h5>
-                <p class="text-dark fs-6">
+                <p class="text-dark fs-6 titulosfont">
                   p1 Lorem ipsum dolor sit amet, consectetur adipiscing
                   elit.Lorem ipsum dolor sit amet, consectetur adipiscing
                   elit.Lorem ipsum dolor sit amet, consectetur adipiscing
@@ -736,7 +781,7 @@
 
                 <img src="assets/dudu.png" alt="Pessoa 3" class="team-img img-fluid" />
                 <h5 class="nome">Eduardo Tonini</h5>
-                <p class="text-dark">
+                <p class="text-dark titulosfont">
                   p3 Lorem ipsum dolor sit amet, consectetur adipiscing
                   elit.Lorem ipsum dolor sit amet, consectetur adipiscing
                   elit.Lorem ipsum dolor sit amet, consectetur adipiscing
@@ -771,6 +816,7 @@
     </div>
   </div>
   <div class="sec2" id="adress">
+    <section class="spikes"></section>
     <h3 class="text-light titulos">Nossa localização</h3><br>
     <div>
       <iframe
@@ -786,7 +832,7 @@
       <br />
     </div>
   </div>
-
+  <section class="spikes2"></section>
   <!-- Footer -->
   <div class="d-flex justify-content-center mt-4 mb-4">
     <a class="text-muted">
