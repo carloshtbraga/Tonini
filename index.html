@@ -11,9 +11,10 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet" />
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
   <style>
-     html {
-            scroll-behavior: smooth;
-        }
+    html {
+      scroll-behavior: smooth;
+    }
+
     body {
       padding-top: 80px;
       /* Ajuste conforme a altura da sua navbar */
@@ -87,6 +88,11 @@
       /* Centraliza a imagem */
       background-repeat: no-repeat;
       /* Evita a repetição da imagem */
+    }
+
+    .telefone {
+      font-size: 15px;
+      color: rgb(243, 238, 238);
     }
 
     .sec2>h3 {
@@ -301,8 +307,8 @@
       padding: 10px;
     }
 
-    .titulosfont{
-font-family: 'Roboto', sans-serif;
+    .titulosfont {
+      font-family: 'Roboto', sans-serif;
     }
 
     @media (max-width: 768px) {
@@ -340,7 +346,7 @@ font-family: 'Roboto', sans-serif;
         src="assets/logo3.png"
         alt="First slide"
       /> -->
-      Tonini Associados
+      Tonini Advogados
     </a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
       aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
@@ -583,29 +589,20 @@ font-family: 'Roboto', sans-serif;
     <div class="selodiv">
       <div>
         <p class="especialidades">
-          <i
-            class="bi bi-check"
-            style="
+          <i class="bi bi-check" style="
             font-size: 30px;
-            background: linear-gradient(45deg, #ffd700, #b88e07, #947e02);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            color: rgb(160, 143, 100);
-          "
-          ></i>
+            color: rgb(231, 180, 50);
+          "></i>
           <!-- <img src="assets/money2.svg" alt="" /> -->
 
           Direito Penal Econômico
         </p>
         <p class="especialidades siz">
-          <i
-              class="bi bi-check"
-              style="
+          <i class="bi bi-check" style="
                 font-size: 30px;
 
                 color: rgb(16, 202, 31);
-              "
-            ></i>
+              "></i>
           <!-- <img src="assets/empresarial.svg" alt="" /> -->
           Direito Penal Empresarial
         </p>
@@ -618,13 +615,10 @@ font-family: 'Roboto', sans-serif;
           Crimes Digitais
         </p>
         <p class="especialidades">
-          <i
-              class="bi bi-check"
-              style="
+          <i class="bi bi-check" style="
                 font-size: 30px;
                
-              "
-            ></i>
+              "></i>
           <!-- <img src="assets/arvore.svg" alt="" /> -->
           Crimes Ambientais
         </p>
@@ -641,10 +635,8 @@ font-family: 'Roboto', sans-serif;
         <p class="especialidades">
           <i class="bi bi-check" style="
                 font-size: 30px;
-                background: linear-gradient(45deg, #ffffff, #ffffff, #ffffff);
-                -webkit-background-clip: text;
-                -webkit-text-fill-color: transparent;
-                color: rgb(160, 143, 100);
+     
+                color: rgb(192, 146, 30);
               "></i>Violência Doméstica
         </p>
       </div>
@@ -746,43 +738,27 @@ font-family: 'Roboto', sans-serif;
       <h5>
         <span class="">Rua México, 90</span> • Grupo 501 • Centro • Rio de
         Janeiro • CEP 20031-141
+        <br>
+
       </h5>
       <br />
     </div>
   </div>
 
   <!-- Footer -->
-  <div class="container">
-    <ul class="nav justify-content-center pb-3 mb-3 mt-3">
-      <li class="nav-item">
-        <a href="#" class="nav-link px-2 text-muted">Telefone (21) 2533-9662</a>
-      </li>
-
-
-    </ul>
-
-    <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
-      <div class="flex d-flex w-100 justify-content-between align-items-center">
-        <div class="col-md-4">
-          <a href="/" class="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1">
-            <svg class="bi" width="30" height="24">
-              <use xlink:href="#bootstrap"></use>
-            </svg>
-          </a>
-
-          <span class="text-muted">©Tonini</span>
-        </div>
-        <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
-          <li class="icon-spacing">
-            <a class="text-muted" href="#">
-              <i class="bi bi-whatsapp" style="font-size: 24px"></i>
-            </a>
-          </li>
-        
-        </ul>
-      </div>
-    </footer>
+  <div class="d-flex justify-content-center mt-4 mb-4">
+    <span class="text-muted">
+      <i class="bi bi-telephone" style="font-size: 20px"></i> (21) 2533-9662
+    </span>
+    <span class="text-muted mx-3">
+      <i class="bi bi-envelope" style="font-size: 20px"></i> tonini@tonini.adv.br
+    </span>
   </div>
+  <footer class="border-top">
+
+    <p href="#" class="text-muted text-center mt-4">©Tonini</p>
+
+  </footer>
 
   <!-- Bootstrap JS and dependencies -->
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
