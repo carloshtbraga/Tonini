@@ -408,6 +408,16 @@
   background-image: linear-gradient(135deg, #646464 25%, transparent 25%), linear-gradient(225deg, #646464 25%, transparent 25%);
   background-position: 0 0;
 }
+.toggle-card {
+  transition: transform 0.2s, box-shadow 0.2s; /* Transições para transformação e sombra */
+}
+
+.toggle-card:active {
+  transform: scale(0.95); /* Reduz o tamanho ao clicar */
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2); /* Adiciona sombra ao clicar */
+}
+
+
   </style>
 </head>
 
@@ -661,20 +671,20 @@
     </div> -->
     <section class="spikes"></section>
     <div class="sec2" id="especialidades">
-      <h3 class="text-light text-center titulos ">Especialidades</h3>
+      <h3 class="text-light text-center titulos">Especialidades</h3>
       <div class="row row-cols-2 row-cols-md-3 g-3 selodiv">
-        
+      
         <div class="col">
-          <div class="card text-center border-0 bg-light mt-4">
+          <div class="card text-center border-0 bg-light mt-4 toggle-card" data-bs-toggle="collapse" data-bs-target="#collapseEcon" data-bs-parent="#especialidades">
             <div class="card-body">
-              <img src="assets/balanca-de-peso.png"class="bal" alt="">
+              <img src="assets/balanca-de-peso.png" class="bal" alt="">
               <p class="card-text mt-2 text-muted spec">Direito Penal Econômico</p>
             </div>
           </div>
         </div>
     
         <div class="col">
-          <div class="card text-center border-0 bg-light mt-4">
+          <div class="card text-center border-0 bg-light mt-4 toggle-card" data-bs-toggle="collapse" data-bs-target="#collapseEmp" data-bs-parent="#especialidades">
             <div class="card-body">
               <i class="bi bi-buildings-fill icone"></i>
               <p class="card-text mt-2 text-muted spec">Direito Penal Empresarial</p>
@@ -683,16 +693,16 @@
         </div>
     
         <div class="col">
-          <div class="card text-center border-0 bg-light mt-4">
+          <div class="card text-center border-0 bg-light mt-4 toggle-card" data-bs-toggle="collapse" data-bs-target="#collapseDig" data-bs-parent="#especialidades">
             <div class="card-body">
               <i class="bi bi-fingerprint icone"></i>
-              <p class="card-text mt-2 text-muted spec">Crimes Digitais</p>
+              <p class="card-text mt-2 text-muted spec">Crimes Digitais &nbsp&nbsp</p>
             </div>
           </div>
         </div>
     
         <div class="col">
-          <div class="card text-center border-0 bg-light mt-4">
+          <div class="card text-center border-0 bg-light mt-4 toggle-card" data-bs-toggle="collapse" data-bs-target="#collapseAmb" data-bs-parent="#especialidades">
             <div class="card-body">
               <i class="bi bi-tree-fill icone"></i>
               <p class="card-text mt-2 text-muted spec">Crimes Ambientais</p>
@@ -701,17 +711,16 @@
         </div>
     
         <div class="col">
-          <div class="card text-center border-0 bg-light mt-4">
+          <div class="card text-center border-0 bg-light mt-4 toggle-card" data-bs-toggle="collapse" data-bs-target="#collapseComp" data-bs-parent="#especialidades">
             <div class="card-body">
-              <!-- <img src="assets/balanca-de-peso.png"class="bal" alt=""> -->
-              <i class="bi bi-bank2  icone"></i>
+              <i class="bi bi-bank2 icone"></i>
               <p class="card-text mt-2 text-muted spec">Compliance Criminal</p>
             </div>
           </div>
         </div>
     
         <div class="col">
-          <div class="card text-center border-0 bg-light mt-4">
+          <div class="card text-center border-0 bg-light mt-4 toggle-card" data-bs-toggle="collapse" data-bs-target="#collapseViol" data-bs-parent="#especialidades">
             <div class="card-body">
               <i class="bi bi-person-standing-dress icone"></i>
               <i class="bi bi-person-standing icone"></i>
@@ -721,8 +730,52 @@
         </div>
         
       </div>
+      <section class="spikes2"></section>
+      
+      <!-- Blocos de colapso -->
+      <div class="collapse" id="collapseEcon">
+        <div class="card card-body">
+          <h4>Direito Penal Econômico</h4>
+          O Direito Penal Econômico aborda crimes que afetam a ordem econômica e financeira, como fraudes e corrupção. Nossa equipe está preparada para defender os interesses de nossos clientes em casos complexos.
+        </div>
+      </div>
+    
+      <div class="collapse" id="collapseEmp">
+        <div class="card card-body">
+          <h4>Direito Penal Empresarial</h4>
+          No Direito Penal Empresarial, atuamos na defesa de empresas e executivos em investigações e ações penais. Oferecemos estratégias jurídicas eficazes para garantir a proteção do seu negócio e reputação.
+        </div>
+      </div>
+    
+      <div class="collapse" id="collapseDig">
+        <div class="card card-body">
+          <h4>Crimes Digitais</h4>
+          Com o aumento da tecnologia, os crimes digitais se tornaram mais frequentes. Nosso escritório oferece consultoria e defesa em casos de crimes cibernéticos, garantindo a segurança de seus dados e direitos.
+        </div>
+      </div>
+    
+      <div class="collapse" id="collapseAmb">
+        <div class="card card-body">
+          <h4>Crimes Ambientais</h4>
+          O Direito Ambiental visa proteger o meio ambiente. Atuamos em casos relacionados a crimes ambientais, oferecendo assessoria para empresas e indivíduos, sempre em conformidade com a legislação vigente.
+        </div>
+      </div>
+    
+      <div class="collapse" id="collapseComp">
+        <div class="card card-body">
+          <h4>Compliance Criminal</h4>
+          Implementamos programas de Compliance Criminal para prevenir e detectar irregularidades nas empresas. Nossa atuação visa garantir a conformidade legal, reduzindo riscos e promovendo uma cultura ética no ambiente corporativo.
+        </div>
+      </div>
+    
+      <div class="collapse" id="collapseViol">
+        <div class="card card-body">
+          <h4>Violência Doméstica</h4>
+          O combate à violência doméstica é uma prioridade. Nossa equipe é especializada em oferecer suporte jurídico e psicológico a vítimas, buscando a proteção e os direitos das pessoas afetadas por essa problemática.
+        </div>
+      </div>
     </div>
-    <section class="spikes2"></section>
+    
     
     
 
@@ -850,9 +903,12 @@
   </footer>
 
   <!-- Bootstrap JS and dependencies -->
+  
+  
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>
