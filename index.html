@@ -310,7 +310,9 @@
     .titulosfont {
       font-family: 'Roboto', sans-serif;
     }
-
+    .bal{
+        width: 80px;
+      }
     @media (max-width: 768px) {
 
       /* Para dispositivos móveis */
@@ -332,7 +334,15 @@
       .textoabout {
         font-size: 15px;
       }
+      .bal{
+        width: 30px;
+      }
     }
+      .spec{
+        font-weight: 700;
+        font-size: large;
+      }
+     
   </style>
 </head>
 
@@ -584,64 +594,70 @@
         </div>
       </div>
     </div> -->
-  <div class="sec2" id="especialidades">
-    <h3 class="text-light">Especialidades</h3>
-    <div class="selodiv">
-      <div>
-        <p class="especialidades">
-          <i class="bi bi-check" style="
-            font-size: 30px;
-            color: rgb(231, 180, 50);
-          "></i>
-          <!-- <img src="assets/money2.svg" alt="" /> -->
-
-          Direito Penal Econômico
-        </p>
-        <p class="especialidades siz">
-          <i class="bi bi-check" style="
-                font-size: 30px;
-
-                color: rgb(16, 202, 31);
-              "></i>
-          <!-- <img src="assets/empresarial.svg" alt="" /> -->
-          Direito Penal Empresarial
-        </p>
-        <p class="especialidades">
-          <i class="bi bi-check" style="
-                font-size: 30px;
-                color: rgb(8, 236, 8);
-              "></i>
-
-          Crimes Digitais
-        </p>
-        <p class="especialidades">
-          <i class="bi bi-check" style="
-                font-size: 30px;
-               
-              "></i>
-          <!-- <img src="assets/arvore.svg" alt="" /> -->
-          Crimes Ambientais
-        </p>
-        <p class="especialidades">
-          <i class="bi bi-check" style="
-                font-size: 30px;
-                background: linear-gradient(45deg, #ffd700, #b88e07, #947e02);
-                -webkit-background-clip: text;
-                -webkit-text-fill-color: transparent;
-                color: rgb(160, 143, 100);
-              "></i>
-          Compliance Criminal
-        </p>
-        <p class="especialidades">
-          <i class="bi bi-check" style="
-                font-size: 30px;
-     
-                color: rgb(192, 146, 30);
-              "></i>Violência Doméstica
-        </p>
+    <div class="sec2" id="especialidades">
+      <h3 class="text-light text-center">Especialidades</h3>
+      <div class="row row-cols-2 row-cols-md-4 g-4 selodiv">
+        
+        <div class="col">
+          <div class="card text-center border-0 bg-light mt-4">
+            <div class="card-body">
+              <img src="assets/balanca-de-peso.png"class="bal" alt="">
+              <p class="card-text mt-2 text-muted spec">Direito Penal Econômico</p>
+            </div>
+          </div>
+        </div>
+    
+        <div class="col">
+          <div class="card text-center border-0 bg-light mt-4">
+            <div class="card-body">
+              <i class="bi bi-buildings-fill" style="font-size: 28px;"></i>
+              <p class="card-text mt-2 text-muted spec">Direito Penal Empresarial</p>
+            </div>
+          </div>
+        </div>
+    
+        <div class="col">
+          <div class="card text-center border-0 bg-light mt-4">
+            <div class="card-body">
+              <i class="bi bi-fingerprint" style="font-size: 28px;"></i>
+              <p class="card-text mt-2 text-muted spec">Crimes Digitais</p>
+            </div>
+          </div>
+        </div>
+    
+        <div class="col">
+          <div class="card text-center border-0 bg-light mt-4">
+            <div class="card-body">
+              <i class="bi bi-tree-fill" style="font-size: 28px;"></i>
+              <p class="card-text mt-2 text-muted spec">Crimes Ambientais</p>
+            </div>
+          </div>
+        </div>
+    
+        <div class="col">
+          <div class="card text-center border-0 bg-light mt-4">
+            <div class="card-body">
+              <!-- <img src="assets/balanca-de-peso.png"class="bal" alt=""> -->
+              <i class="bi bi-bank2 " style="font-size: 28px;"></i>
+              <p class="card-text mt-2 text-muted spec">Compliance Criminal</p>
+            </div>
+          </div>
+        </div>
+    
+        <div class="col">
+          <div class="card text-center border-0 bg-light mt-4">
+            <div class="card-body">
+              <i class="bi bi-person-standing-dress" style="font-size: 28px;"></i>
+              <i class="bi bi-person-standing" style="font-size: 28px;"></i>
+              <p class="card-text mt-2 text-muted spec">Violência Doméstica</p>
+            </div>
+          </div>
+        </div>
+        
       </div>
     </div>
-  </div>
+    
+    
 
   <!-- <div class="sec4" id="adress">
       <h3 class="h3localizacao">Escritório</h3>
@@ -747,10 +763,10 @@
 
   <!-- Footer -->
   <div class="d-flex justify-content-center mt-4 mb-4">
-    <span class="text-muted">
-      <i class="bi bi-telephone" style="font-size: 20px"></i> (21) 2533-9662
-    </span>
-    <a href="mailto:tonini@tonini.adv.br?subject=Contato&body=Olá, gostaria de falar sobre..." class="px-2 text-muted">
+    <a class="text-muted">
+      <i class="bi bi-telephone" style="font-size: 20px"></i> (21) 2533-9662 
+    </a>
+    <a href="mailto:tonini@tonini.adv.br?subject=Contato&body=Olá, gostaria de falar sobre..." class="text-muted px-3">
       <i class="bi bi-envelope" style="font-size: 20px"></i> tonini@tonini.adv.br
     </a>
   </div>
