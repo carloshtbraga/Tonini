@@ -11,6 +11,9 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet" />
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
   <style>
     html {
       scroll-behavior: smooth;
@@ -90,6 +93,12 @@
       /* Centraliza a imagem */
       background-repeat: no-repeat;
       /* Evita a repetição da imagem */
+    }
+
+    .infofont {
+      font-size: 24px;
+      font-family: "Caveat", cursive;
+      margin-top: 20px;
     }
 
     .telefone {
@@ -298,8 +307,11 @@
       width: 250px;
       height: 260px;
 
+    
     }
-
+    .logofont{
+      font-family: "Montserrat", sans-serif;
+    }
     .textoabout {
       font-size: 22px;
     }
@@ -340,7 +352,8 @@
       }
 
       .textoabout {
-        font-size: 15px;
+        font-size: 18px;
+        font-family: "Montserrat", sans-serif;
       }
       .bal{
         width: 36px;
@@ -355,7 +368,7 @@
     }
     }
       .spec{
-        font-weight: 900;
+        font-weight: 700;
         font-size: 18px;
 
       }
@@ -366,7 +379,7 @@
     }
   
     .titulosfont2 {
-      font-family: "Caveat", cursive;
+      font-family: "Montserrat", sans-serif;
       font-size: 24px;
      
     }
@@ -429,7 +442,7 @@
 <body>
   <!-- Navbar -->
   <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top border-bottom">
-    <a class="navbar-brand titulosfont2" href="#">
+    <a class="navbar-brand logofont" href="#">
       <img src="assets/logo.png" width="30" height="30" class="d-inline-block align-top" alt="" />
       <!-- <img
         class="logu"
@@ -548,7 +561,7 @@
           /> -->
 
       <div class="divtextoabout">
-        <p class="text-dark text-justify mt-5 textoabout titulosfont">
+        <p class="text-dark text-justify mt-5 textoabout">
           <span class="font-weight-bold">Tonini Advogados Associados</span>, é
           um dos escritórios mais destacados e reconhecidos pela comunidade
           jurídica brasileira. Fundado em 1991, é liderado por
@@ -817,12 +830,12 @@
                 <br />
                 <img src="assets/renato.jpg" alt="Pessoa 1" class="team-img img-fluid" />
                 <h5 class="nome">Renato Tonini</h5>
-                <p class="text-dark fs-6 titulosfont2">
+                <h4 class="text-dark fs-6 infofont">
                   p1 Lorem ipsum dolor sit amet, consectetur adipiscing
                   elit.Lorem ipsum dolor sit amet, consectetur adipiscing
                   elit.Lorem ipsum dolor sit amet, consectetur adipiscing
                   elit.
-                </p>
+                </h4>
               </div>
             </div>
             <div class="col-12 col-sm-6">
@@ -830,12 +843,12 @@
                 <br />
                 <img src="assets/lila.jpeg" alt="Pessoa 2" class="team-img img-fluid" />
                 <h5 class="nome">Lila Tonini</h5>
-                <p class="text-dark titulosfont2">
+                <h4 class="text-dark infofont">
                   p2 Lorem ipsum dolor sit amet, consectetur adipiscing
                   elit.Lorem ipsum dolor sit amet, consectetur adipiscing
                   elit.Lorem ipsum dolor sit amet, consectetur adipiscing
                   elit.
-                </p>
+                </h4>
               </div>
             </div>
           </div>
@@ -848,12 +861,12 @@
 
                 <img src="assets/dudu.png" alt="Pessoa 3" class="team-img img-fluid" />
                 <h5 class="nome">Eduardo Tonini</h5>
-                <p class="text-dark titulosfont">
+                <h4 class="text-dark infofont">
                   p3 Lorem ipsum dolor sit amet, consectetur adipiscing
                   elit.Lorem ipsum dolor sit amet, consectetur adipiscing
                   elit.Lorem ipsum dolor sit amet, consectetur adipiscing
                   elit.
-                </p>
+                </h4>
               </div>
             </div>
             <div class="col-12 col-sm-6">
@@ -861,12 +874,12 @@
                 <br />
                 <img src="" alt="Pessoa 4" class="team-img img-fluid" />
                 <h5 class="nome">Nome Sobrenome</h5>
-                <p class="text-dark">
+                <h4 class="text-dark infofont">
                   Lorem ipsum dolor sit amet, consectetur adipiscing
                   elit.Lorem ipsum dolor sit amet, consectetur adipiscing
                   elit.Lorem ipsum dolor sit amet, consectetur adipiscing
                   elit.
-                </p>
+                </h4>
               </div>
             </div>
           </div>
@@ -936,7 +949,7 @@
    -->
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
-  <!-- <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script> -->
   
 </body>
